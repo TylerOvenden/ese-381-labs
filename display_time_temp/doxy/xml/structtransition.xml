@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structtransition" kind="struct" language="C++" prot="public">
+    <compoundname>transition</compoundname>
+    <includes refid="_f_s_m_8h" local="no">FSM.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtransition_1a58be31cfbf428c5b0b9aded534ae53df" prot="public" static="no" mutable="no">
+        <type><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544" kindref="member">key</ref></type>
+        <definition>key keyval</definition>
+        <argsstring></argsstring>
+        <name>keyval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" line="33" column="5" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" compoundref="_f_s_m_8c" startline="104" endline="128">fsm</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtransition_1a7f5232145915a376a84819ea2d456320" prot="public" static="no" mutable="no">
+        <type><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref></type>
+        <definition>state next_state</definition>
+        <argsstring></argsstring>
+        <name>next_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" line="34" column="7" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" compoundref="_f_s_m_8c" startline="104" endline="128">fsm</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structtransition_1a71b609409199de29f533e4adb73c4a72" prot="public" static="no" mutable="no">
+        <type><ref refid="_f_s_m_8h_1af0a2c753b410f716bed2a4df6174766e" kindref="member">task_fn_ptr</ref></type>
+        <definition>task_fn_ptr tf_ptr</definition>
+        <argsstring></argsstring>
+        <name>tf_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" line="35" column="13" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" compoundref="_f_s_m_8c" startline="104" endline="128">fsm</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" line="32" column="1" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structtransition_1a58be31cfbf428c5b0b9aded534ae53df" prot="public" virt="non-virtual"><scope>transition</scope><name>keyval</name></member>
+      <member refid="structtransition_1a7f5232145915a376a84819ea2d456320" prot="public" virt="non-virtual"><scope>transition</scope><name>next_state</name></member>
+      <member refid="structtransition_1a71b609409199de29f533e4adb73c4a72" prot="public" virt="non-virtual"><scope>transition</scope><name>tf_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

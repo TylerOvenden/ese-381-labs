@@ -1,0 +1,184 @@
+\hypertarget{_a_d_c_8h}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/lab10/testproject/\+ADC.h File Reference}
+\label{_a_d_c_8h}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h@{C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_a_d_c_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_d_c_8h_aeb80ba2c1398a20e1c863d5b8f3176e1}{RES12\+\_\+\+Bm}}~0x00
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_a_d_c_8h_a130db492e8cd5bb6382659d6279ba4bb}{update\+\_\+lcd\+\_\+dog}} (void)
+\item 
+void \mbox{\hyperlink{_a_d_c_8h_a327f9c3ee8cea828ef8d17070a538447}{convert}} (void)
+\item 
+void \mbox{\hyperlink{_a_d_c_8h_a1cec629e5eb33a4b204d5f8a534c6558}{display\+Volt}} (uint16\+\_\+t r)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_a_d_c_8h_a64c5ca25678bfa4ec7030e65bfe65104}{convert\+To\+BCD}} (uint16\+\_\+t dec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{_a_d_c_8h_aab1989327f2a212d93af562328a4e2de}{temp\+Hex}} \mbox{[}3\mbox{]}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{_a_d_c_8h_a7e8b4baf0386e1c2225b08790f3c3ec4}{result}}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{_a_d_c_8h_a0849a05a0191a174215a9f9832d6ce91}{temp}}
+\item 
+volatile int \mbox{\hyperlink{_a_d_c_8h_ae3fc486a214e79b34c3efd0b1361cf88}{boolean}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_a_d_c_8h_aeb80ba2c1398a20e1c863d5b8f3176e1}\label{_a_d_c_8h_aeb80ba2c1398a20e1c863d5b8f3176e1}} 
+\index{ADC.h@{ADC.h}!RES12\_Bm@{RES12\_Bm}}
+\index{RES12\_Bm@{RES12\_Bm}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{RES12\_Bm}{RES12\_Bm}}
+{\footnotesize\ttfamily \#define RES12\+\_\+\+Bm~0x00}
+
+
+
+Definition at line 12 of file ADC.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_a_d_c_8h_a327f9c3ee8cea828ef8d17070a538447}\label{_a_d_c_8h_a327f9c3ee8cea828ef8d17070a538447}} 
+\index{ADC.h@{ADC.h}!convert@{convert}}
+\index{convert@{convert}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily void convert (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file ADC.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{_a_d_c_8h_a327f9c3ee8cea828ef8d17070a538447_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{_a_d_c_8h_a327f9c3ee8cea828ef8d17070a538447_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_a_d_c_8h_a64c5ca25678bfa4ec7030e65bfe65104}\label{_a_d_c_8h_a64c5ca25678bfa4ec7030e65bfe65104}} 
+\index{ADC.h@{ADC.h}!convertToBCD@{convertToBCD}}
+\index{convertToBCD@{convertToBCD}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{convertToBCD()}{convertToBCD()}}
+{\footnotesize\ttfamily uint32\+\_\+t convert\+To\+BCD (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{dec }\end{DoxyParamCaption})}
+
+
+
+Definition at line 174 of file ADC.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{_a_d_c_8h_a64c5ca25678bfa4ec7030e65bfe65104_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_a_d_c_8h_a1cec629e5eb33a4b204d5f8a534c6558}\label{_a_d_c_8h_a1cec629e5eb33a4b204d5f8a534c6558}} 
+\index{ADC.h@{ADC.h}!displayVolt@{displayVolt}}
+\index{displayVolt@{displayVolt}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{displayVolt()}{displayVolt()}}
+{\footnotesize\ttfamily void display\+Volt (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{r }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file ADC.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_a_d_c_8h_a1cec629e5eb33a4b204d5f8a534c6558_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_a_d_c_8h_a130db492e8cd5bb6382659d6279ba4bb}\label{_a_d_c_8h_a130db492e8cd5bb6382659d6279ba4bb}} 
+\index{ADC.h@{ADC.h}!update\_lcd\_dog@{update\_lcd\_dog}}
+\index{update\_lcd\_dog@{update\_lcd\_dog}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{update\_lcd\_dog()}{update\_lcd\_dog()}}
+{\footnotesize\ttfamily void update\+\_\+lcd\+\_\+dog (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 221 of file DOG\+\_\+\+LCD.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_a_d_c_8h_a130db492e8cd5bb6382659d6279ba4bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_a_d_c_8h_a130db492e8cd5bb6382659d6279ba4bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_a_d_c_8h_ae3fc486a214e79b34c3efd0b1361cf88}\label{_a_d_c_8h_ae3fc486a214e79b34c3efd0b1361cf88}} 
+\index{ADC.h@{ADC.h}!boolean@{boolean}}
+\index{boolean@{boolean}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{boolean}{boolean}}
+{\footnotesize\ttfamily volatile int boolean}
+
+
+
+Definition at line 23 of file ADC.\+h.
+
+\mbox{\Hypertarget{_a_d_c_8h_a7e8b4baf0386e1c2225b08790f3c3ec4}\label{_a_d_c_8h_a7e8b4baf0386e1c2225b08790f3c3ec4}} 
+\index{ADC.h@{ADC.h}!result@{result}}
+\index{result@{result}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t result}
+
+
+
+Definition at line 21 of file ADC.\+h.
+
+\mbox{\Hypertarget{_a_d_c_8h_a0849a05a0191a174215a9f9832d6ce91}\label{_a_d_c_8h_a0849a05a0191a174215a9f9832d6ce91}} 
+\index{ADC.h@{ADC.h}!temp@{temp}}
+\index{temp@{temp}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{temp}{temp}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t temp}
+
+
+
+Definition at line 22 of file ADC.\+h.
+
+\mbox{\Hypertarget{_a_d_c_8h_aab1989327f2a212d93af562328a4e2de}\label{_a_d_c_8h_aab1989327f2a212d93af562328a4e2de}} 
+\index{ADC.h@{ADC.h}!tempHex@{tempHex}}
+\index{tempHex@{tempHex}!ADC.h@{ADC.h}}
+\doxysubsubsection{\texorpdfstring{tempHex}{tempHex}}
+{\footnotesize\ttfamily char temp\+Hex\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 20 of file ADC.\+h.
+

@@ -1,0 +1,323 @@
+
+DS1306_write_read_test.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00804000  0000020c  000002a0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000020c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000a  00804014  00804014  000002b4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000002b4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002e4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000058  00000000  00000000  00000324  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00003296  00000000  00000000  0000037c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00002ed5  00000000  00000000  00003612  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000480  00000000  00000000  000064e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000084  00000000  00000000  00006968  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00001764  00000000  00000000  000069ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000af  00000000  00000000  00008150  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000038  00000000  00000000  000081ff  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 7a 00 	jmp	0xf4	; 0xf4 <__ctors_end>
+   4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+   8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+   c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  10:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  14:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  18:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  1c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  20:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  24:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  28:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  2c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  30:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  34:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  38:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  3c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  40:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  44:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  48:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  4c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  50:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  54:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  58:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  5c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  60:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  64:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  68:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  6c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  70:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  74:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  78:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  7c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  80:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  84:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  88:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  8c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  90:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  94:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  98:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  9c:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  a8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  ac:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  b8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  bc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  c8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  cc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  d8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  dc:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e4:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  e8:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  ec:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+  f0:	0c 94 99 00 	jmp	0x132	; 0x132 <__bad_interrupt>
+
+000000f4 <__ctors_end>:
+  f4:	11 24       	eor	r1, r1
+  f6:	1f be       	out	0x3f, r1	; 63
+  f8:	cf ef       	ldi	r28, 0xFF	; 255
+  fa:	cd bf       	out	0x3d, r28	; 61
+  fc:	df e7       	ldi	r29, 0x7F	; 127
+  fe:	de bf       	out	0x3e, r29	; 62
+
+00000100 <__do_copy_data>:
+ 100:	10 e4       	ldi	r17, 0x40	; 64
+ 102:	a0 e0       	ldi	r26, 0x00	; 0
+ 104:	b0 e4       	ldi	r27, 0x40	; 64
+ 106:	ec e0       	ldi	r30, 0x0C	; 12
+ 108:	f2 e0       	ldi	r31, 0x02	; 2
+ 10a:	00 e0       	ldi	r16, 0x00	; 0
+ 10c:	0b bf       	out	0x3b, r16	; 59
+ 10e:	02 c0       	rjmp	.+4      	; 0x114 <__do_copy_data+0x14>
+ 110:	07 90       	elpm	r0, Z+
+ 112:	0d 92       	st	X+, r0
+ 114:	a4 31       	cpi	r26, 0x14	; 20
+ 116:	b1 07       	cpc	r27, r17
+ 118:	d9 f7       	brne	.-10     	; 0x110 <__do_copy_data+0x10>
+
+0000011a <__do_clear_bss>:
+ 11a:	20 e4       	ldi	r18, 0x40	; 64
+ 11c:	a4 e1       	ldi	r26, 0x14	; 20
+ 11e:	b0 e4       	ldi	r27, 0x40	; 64
+ 120:	01 c0       	rjmp	.+2      	; 0x124 <.do_clear_bss_start>
+
+00000122 <.do_clear_bss_loop>:
+ 122:	1d 92       	st	X+, r1
+
+00000124 <.do_clear_bss_start>:
+ 124:	ae 31       	cpi	r26, 0x1E	; 30
+ 126:	b2 07       	cpc	r27, r18
+ 128:	e1 f7       	brne	.-8      	; 0x122 <.do_clear_bss_loop>
+ 12a:	0e 94 9b 00 	call	0x136	; 0x136 <main>
+ 12e:	0c 94 04 01 	jmp	0x208	; 0x208 <_exit>
+
+00000132 <__bad_interrupt>:
+ 132:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000136 <main>:
+
+//******************************************************************************
+int main(void)
+{
+
+	write_read_RTC_test();
+ 136:	0e 94 dd 00 	call	0x1ba	; 0x1ba <write_read_RTC_test>
+ 13a:	ff cf       	rjmp	.-2      	; 0x13a <main+0x4>
+
+0000013c <SPI_rtc_ds1306_config>:
+
+void SPI_rtc_ds1306_config (void){
+	//since the AVR runs at 4Mhz & the desired frequency for the ds_1306 is about
+	//32kHz, we used the prescaler of divide by 128 to get the values closest to 
+	//32kHz
+			PORTA_DIR = 0xF0;
+ 13c:	80 ef       	ldi	r24, 0xF0	; 240
+ 13e:	80 93 00 04 	sts	0x0400, r24	; 0x800400 <__TEXT_REGION_LENGTH__+0x7e0400>
+			PORTC_DIR = 0x02;
+ 142:	82 e0       	ldi	r24, 0x02	; 2
+ 144:	80 93 40 04 	sts	0x0440, r24	; 0x800440 <__TEXT_REGION_LENGTH__+0x7e0440>
+			
+			PORTC_OUT = 0x00;
+ 148:	10 92 44 04 	sts	0x0444, r1	; 0x800444 <__TEXT_REGION_LENGTH__+0x7e0444>
+				//configures SPI
+			SPI0_CTRLA = SPI_ENABLE_bm | SPI_MASTER_bm  | SPI_PRESC_DIV128_gc;
+ 14c:	97 e2       	ldi	r25, 0x27	; 39
+ 14e:	90 93 40 09 	sts	0x0940, r25	; 0x800940 <__TEXT_REGION_LENGTH__+0x7e0940>
+			
+    //in the Salaee diagrams given in the lecture, I saw that CPOL would be 0
+	//as the CLK is 0 when idle, to find CPHA I observed the same diagrams and saw
+	// it was being sampled at the falling edge so CPHA = 1
+	//CPOL = 0, CPHA = 1 is mode 1 for SPI	
+			SPI0_CTRLB = SPI_MODE1_bm;
+ 152:	80 93 41 09 	sts	0x0941, r24	; 0x800941 <__TEXT_REGION_LENGTH__+0x7e0941>
+ 156:	08 95       	ret
+
+00000158 <write_RTC>:
+// data (data_RTC). In the DS1306 data sheet this operation is called an SPI
+// single-byte write.
+//**************************************************************************
+
+void write_RTC (unsigned char reg_RTC, unsigned char data_RTC){
+	PORTC_OUT |= 0x02;
+ 158:	e4 e4       	ldi	r30, 0x44	; 68
+ 15a:	f4 e0       	ldi	r31, 0x04	; 4
+ 15c:	90 81       	ld	r25, Z
+ 15e:	92 60       	ori	r25, 0x02	; 2
+ 160:	90 83       	st	Z, r25
+	SPI0.DATA = reg_RTC;
+ 162:	80 93 44 09 	sts	0x0944, r24	; 0x800944 <__TEXT_REGION_LENGTH__+0x7e0944>
+	while(SPI0_INTFLAGS !=  SPI_IF_bm){}    // wait until Tx ready
+ 166:	80 91 43 09 	lds	r24, 0x0943	; 0x800943 <__TEXT_REGION_LENGTH__+0x7e0943>
+ 16a:	80 38       	cpi	r24, 0x80	; 128
+ 16c:	e1 f7       	brne	.-8      	; 0x166 <write_RTC+0xe>
+	SPI0.DATA = data_RTC;
+ 16e:	60 93 44 09 	sts	0x0944, r22	; 0x800944 <__TEXT_REGION_LENGTH__+0x7e0944>
+		while(SPI0_INTFLAGS !=  SPI_IF_bm){}    // wait until Tx ready
+ 172:	80 91 43 09 	lds	r24, 0x0943	; 0x800943 <__TEXT_REGION_LENGTH__+0x7e0943>
+ 176:	80 38       	cpi	r24, 0x80	; 128
+ 178:	e1 f7       	brne	.-8      	; 0x172 <write_RTC+0x1a>
+	
+	PORTC_OUT &= 0xFD;
+ 17a:	e4 e4       	ldi	r30, 0x44	; 68
+ 17c:	f4 e0       	ldi	r31, 0x04	; 4
+ 17e:	80 81       	ld	r24, Z
+ 180:	8d 7f       	andi	r24, 0xFD	; 253
+ 182:	80 83       	st	Z, r24
+ 184:	08 95       	ret
+
+00000186 <read_RTC>:
+// must first write the register's address (reg_RTC) followed by writing a dummy
+// byte to generate the SCLKs to read the data (data_RTC). In the DS1306 data
+// sheet this operation is called am SPI single-byte read.
+//**************************************************************************
+unsigned char read_RTC (unsigned char reg_RTC) {
+	PORTC_OUT |= 0x02;
+ 186:	e4 e4       	ldi	r30, 0x44	; 68
+ 188:	f4 e0       	ldi	r31, 0x04	; 4
+ 18a:	90 81       	ld	r25, Z
+ 18c:	92 60       	ori	r25, 0x02	; 2
+ 18e:	90 83       	st	Z, r25
+	//writes the read address
+	SPI0.DATA = reg_RTC;
+ 190:	80 93 44 09 	sts	0x0944, r24	; 0x800944 <__TEXT_REGION_LENGTH__+0x7e0944>
+	while(SPI0_INTFLAGS !=  SPI_IF_bm){}    // wait until Tx ready
+ 194:	80 91 43 09 	lds	r24, 0x0943	; 0x800943 <__TEXT_REGION_LENGTH__+0x7e0943>
+ 198:	80 38       	cpi	r24, 0x80	; 128
+ 19a:	e1 f7       	brne	.-8      	; 0x194 <read_RTC+0xe>
+	//write dummy data
+	SPI0.DATA = 0x01;
+ 19c:	81 e0       	ldi	r24, 0x01	; 1
+ 19e:	80 93 44 09 	sts	0x0944, r24	; 0x800944 <__TEXT_REGION_LENGTH__+0x7e0944>
+	while(SPI0_INTFLAGS !=  SPI_IF_bm){}    // wait until Tx ready
+ 1a2:	80 91 43 09 	lds	r24, 0x0943	; 0x800943 <__TEXT_REGION_LENGTH__+0x7e0943>
+ 1a6:	80 38       	cpi	r24, 0x80	; 128
+ 1a8:	e1 f7       	brne	.-8      	; 0x1a2 <read_RTC+0x1c>
+	
+	PORTC_OUT &= 0xFD;
+ 1aa:	e4 e4       	ldi	r30, 0x44	; 68
+ 1ac:	f4 e0       	ldi	r31, 0x04	; 4
+ 1ae:	80 81       	ld	r24, Z
+ 1b0:	8d 7f       	andi	r24, 0xFD	; 253
+ 1b2:	80 83       	st	Z, r24
+	
+	return SPI0_DATA;
+ 1b4:	80 91 44 09 	lds	r24, 0x0944	; 0x800944 <__TEXT_REGION_LENGTH__+0x7e0944>
+	
+}
+ 1b8:	08 95       	ret
+
+000001ba <write_read_RTC_test>:
+// This function writes a byte to the NV RAM and then it reads back the location
+// just written and places the result in a global array named RTC_byte[]. The
+// function repeats this write/read sequence 10 times. The locations written are
+// 0xA0 through 0xA9 and the corresponding locations read are 0x20 through 0x29.
+//**************************************************************************
+void write_read_RTC_test() {
+ 1ba:	cf 93       	push	r28
+ 1bc:	df 93       	push	r29
+
+//writes byte to CLK reg
+	SPI_rtc_ds1306_config();
+ 1be:	0e 94 9e 00 	call	0x13c	; 0x13c <SPI_rtc_ds1306_config>
+	write_RTC(CTRL_REG, 0x00);	
+ 1c2:	60 e0       	ldi	r22, 0x00	; 0
+ 1c4:	8f e8       	ldi	r24, 0x8F	; 143
+ 1c6:	0e 94 ac 00 	call	0x158	; 0x158 <write_RTC>
+	write_RTC(CTRL_REG, ONEHZ);
+ 1ca:	64 e0       	ldi	r22, 0x04	; 4
+ 1cc:	8f e8       	ldi	r24, 0x8F	; 143
+ 1ce:	0e 94 ac 00 	call	0x158	; 0x158 <write_RTC>
+	
+	//loops through bytes 0xA0-0xA9
+	// & 0x20-0x29
+	for(int i = 0;i<10;i++){
+ 1d2:	c0 e0       	ldi	r28, 0x00	; 0
+ 1d4:	d0 e0       	ldi	r29, 0x00	; 0
+ 1d6:	12 c0       	rjmp	.+36     	; 0x1fc <write_read_RTC_test+0x42>
+		//write 0x01 to each write register address
+		write_RTC(writeReg[i],0x01);
+ 1d8:	fe 01       	movw	r30, r28
+ 1da:	e6 5f       	subi	r30, 0xF6	; 246
+ 1dc:	ff 4b       	sbci	r31, 0xBF	; 191
+ 1de:	61 e0       	ldi	r22, 0x01	; 1
+ 1e0:	80 81       	ld	r24, Z
+ 1e2:	0e 94 ac 00 	call	0x158	; 0x158 <write_RTC>
+		//reads it back
+		RTC_byte[i] = read_RTC(readReg[i]);
+ 1e6:	fe 01       	movw	r30, r28
+ 1e8:	e0 50       	subi	r30, 0x00	; 0
+ 1ea:	f0 4c       	sbci	r31, 0xC0	; 192
+ 1ec:	80 81       	ld	r24, Z
+ 1ee:	0e 94 c3 00 	call	0x186	; 0x186 <read_RTC>
+ 1f2:	fe 01       	movw	r30, r28
+ 1f4:	ec 5e       	subi	r30, 0xEC	; 236
+ 1f6:	ff 4b       	sbci	r31, 0xBF	; 191
+ 1f8:	80 83       	st	Z, r24
+	write_RTC(CTRL_REG, 0x00);	
+	write_RTC(CTRL_REG, ONEHZ);
+	
+	//loops through bytes 0xA0-0xA9
+	// & 0x20-0x29
+	for(int i = 0;i<10;i++){
+ 1fa:	21 96       	adiw	r28, 0x01	; 1
+ 1fc:	ca 30       	cpi	r28, 0x0A	; 10
+ 1fe:	d1 05       	cpc	r29, r1
+ 200:	5c f3       	brlt	.-42     	; 0x1d8 <write_read_RTC_test+0x1e>
+		write_RTC(writeReg[i],0x01);
+		//reads it back
+		RTC_byte[i] = read_RTC(readReg[i]);
+	}
+	
+}
+ 202:	df 91       	pop	r29
+ 204:	cf 91       	pop	r28
+ 206:	08 95       	ret
+
+00000208 <_exit>:
+ 208:	f8 94       	cli
+
+0000020a <__stop_program>:
+ 20a:	ff cf       	rjmp	.-2      	; 0x20a <__stop_program>

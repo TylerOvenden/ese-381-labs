@@ -1,0 +1,127 @@
+\hypertarget{main_8c}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/display\+\_\+time\+\_\+temp/display\+\_\+time\+\_\+temp/main.c File Reference}
+\label{main_8c}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/main.c@{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/main.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}DS1306\+\_\+\+RTCDrivers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DOG\+\_\+\+LCD.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ADC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}USART3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}FSM.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~4000000
+\item 
+\#define \mbox{\hyperlink{main_8c_abdc8e0ac1c628ffce7fc18478f4ad6b3}{ALARM0\+SEC\+\_\+write}}~0x87
+\item 
+\#define \mbox{\hyperlink{main_8c_a8e192e716a2e2265ea5f43dfe6ab0050}{READ\+\_\+\+STATUS}}~0x10
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_ae1e113ca637d2af28b22659464940e53}{init\+Interupt}} ()
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\item 
+\mbox{\hyperlink{main_8c_a498aa6d3c05eb0c93268cd2516dc55ca}{ISR}} (PORTC\+\_\+\+PORT\+\_\+vect)
+\item 
+\mbox{\hyperlink{main_8c_a1f11fdfd6a878a854419434a4a401693}{ISR}} (USART3\+\_\+\+RXC\+\_\+vect)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_abdc8e0ac1c628ffce7fc18478f4ad6b3}\label{main_8c_abdc8e0ac1c628ffce7fc18478f4ad6b3}} 
+\index{main.c@{main.c}!ALARM0SEC\_write@{ALARM0SEC\_write}}
+\index{ALARM0SEC\_write@{ALARM0SEC\_write}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ALARM0SEC\_write}{ALARM0SEC\_write}}
+{\footnotesize\ttfamily \#define ALARM0\+SEC\+\_\+write~0x87}
+
+\mbox{\Hypertarget{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{main.c@{main.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~4000000}
+
+\mbox{\Hypertarget{main_8c_a8e192e716a2e2265ea5f43dfe6ab0050}\label{main_8c_a8e192e716a2e2265ea5f43dfe6ab0050}} 
+\index{main.c@{main.c}!READ\_STATUS@{READ\_STATUS}}
+\index{READ\_STATUS@{READ\_STATUS}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{READ\_STATUS}{READ\_STATUS}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+STATUS~0x10}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_ae1e113ca637d2af28b22659464940e53}\label{main_8c_ae1e113ca637d2af28b22659464940e53}} 
+\index{main.c@{main.c}!initInterupt@{initInterupt}}
+\index{initInterupt@{initInterupt}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{initInterupt()}{initInterupt()}}
+{\footnotesize\ttfamily void init\+Interupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{main_8c_ae1e113ca637d2af28b22659464940e53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{main_8c_ae1e113ca637d2af28b22659464940e53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a498aa6d3c05eb0c93268cd2516dc55ca}\label{main_8c_a498aa6d3c05eb0c93268cd2516dc55ca}} 
+\index{main.c@{main.c}!ISR@{ISR}}
+\index{ISR@{ISR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{PORTC\+\_\+\+PORT\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a498aa6d3c05eb0c93268cd2516dc55ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a1f11fdfd6a878a854419434a4a401693}\label{main_8c_a1f11fdfd6a878a854419434a4a401693}} 
+\index{main.c@{main.c}!ISR@{ISR}}
+\index{ISR@{ISR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ISR (\begin{DoxyParamCaption}\item[{USART3\+\_\+\+RXC\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{main_8c_a1f11fdfd6a878a854419434a4a401693_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}

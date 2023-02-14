@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_u_s_a_r_t3_8h" kind="file" language="C++">
+    <compoundname>USART3.h</compoundname>
+    <includedby refid="main_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</includedby>
+    <includedby refid="_u_s_a_r_t3_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.c</label>
+        <link refid="_u_s_a_r_t3_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h</label>
+        <link refid="_u_s_a_r_t3_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_u_s_a_r_t3_8h_1ad9d7723c2b6ea1681157e9e5dd43a9a4" prot="public" static="no">
+        <name>BAU</name>
+        <initializer>((4)*(4)*1000000)/(9600)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" line="11" column="17" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_u_s_a_r_t3_8h_1ab94fbb73b86fff26278a1372bea9833c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_USART</definition>
+        <argsstring>()</argsstring>
+        <name>init_USART</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" line="13" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.c" bodystart="37" bodyend="54" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" declline="13" declcolumn="6"/>
+        <references refid="_u_s_a_r_t3_8h_1ad9d7723c2b6ea1681157e9e5dd43a9a4" compoundref="_u_s_a_r_t3_8h" startline="11">BAU</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="41" endline="61">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_u_s_a_r_t3_8h_1ae467ad144c65dfe4180ba3f419734ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void transmit_USART</definition>
+        <argsstring>(int data)</argsstring>
+        <name>transmit_USART</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" line="15" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.c" bodystart="64" bodyend="78" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h" declline="15" declcolumn="6"/>
+        <references refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" compoundref="_a_d_c_8h" startline="21">temp</references>
+        <referencedby refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" compoundref="_f_s_m_8c" startline="140" endline="144">set_hours_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" compoundref="_f_s_m_8c" startline="145" endline="150">set_mins_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" compoundref="_f_s_m_8c" startline="151" endline="154">set_sec_fn</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>USART3.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>4/27/2021<sp/>5:52:37<sp/>PM</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>vleen</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USART3_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART3_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_u_s_a_r_t3_8h_1ad9d7723c2b6ea1681157e9e5dd43a9a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BAU<sp/>((4)*(4)*1000000)/(9600)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t3_8h_1ab94fbb73b86fff26278a1372bea9833c" kindref="member">init_USART</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_u_s_a_r_t3_8h_1ae467ad144c65dfe4180ba3f419734ea3" kindref="member">transmit_USART</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USART3_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/USART3.h"/>
+  </compounddef>
+</doxygen>

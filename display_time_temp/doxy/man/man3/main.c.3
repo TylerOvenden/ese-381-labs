@@ -1,0 +1,77 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" 3 "Wed Apr 28 2021" "Version 1.0" "Lab 12: Data Logger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <avr/io\&.h>\fP
+.br
+\fC#include 'DS1306_RTCDrivers\&.h'\fP
+.br
+\fC#include 'DOG_LCD\&.h'\fP
+.br
+\fC#include 'ADC\&.h'\fP
+.br
+\fC#include 'USART3\&.h'\fP
+.br
+\fC#include 'FSM\&.h'\fP
+.br
+\fC#include <avr/interrupt\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <util/delay\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBF_CPU\fP   4000000"
+.br
+.ti -1c
+.RI "#define \fBALARM0SEC_write\fP   0x87"
+.br
+.ti -1c
+.RI "#define \fBREAD_STATUS\fP   0x10"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitInterupt\fP ()"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.ti -1c
+.RI "\fBISR\fP (PORTC_PORT_vect)"
+.br
+.ti -1c
+.RI "\fBISR\fP (USART3_RXC_vect)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ALARM0SEC_write   0x87"
+
+.SS "#define F_CPU   4000000"
+
+.SS "#define READ_STATUS   0x10"
+
+.SH "Function Documentation"
+.PP 
+.SS "void initInterupt ()"
+
+.SS "ISR (PORTC_PORT_vect)"
+
+.SS "ISR (USART3_RXC_vect)"
+
+.SS "int main (void)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 12: Data Logger from the source code\&.

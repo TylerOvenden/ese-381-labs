@@ -1,0 +1,182 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" 3 "Wed Apr 28 2021" "Version 1.0" "Lab 12: Data Logger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <avr/io\&.h>\fP
+.br
+\fC#include 'FSM\&.h'\fP
+.br
+\fC#include 'DS1306_RTCDrivers\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBfsm\fP (\fBstate\fP ps, \fBkey\fP keyval)"
+.br
+.ti -1c
+.RI "void \fBset_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBerror_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_hours_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_mins_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_sec_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBdigit_in_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_hour_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_min_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_sec_fn\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBtransition\fP \fBidle_transitions\fP []"
+.br
+.ti -1c
+.RI "const \fBtransition\fP \fBset_transitions\fP []"
+.br
+.ti -1c
+.RI "const \fBtransition\fP \fBhours_transitions\fP []"
+.br
+.ti -1c
+.RI "const \fBtransition\fP \fBminutes_transitions\fP []"
+.br
+.ti -1c
+.RI "const \fBtransition\fP \fBseconds_transitions\fP []"
+.br
+.ti -1c
+.RI "const \fBtransition\fP * \fBps_transition_ptr\fP [5]"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void digit_in_fn ()"
+
+.SS "void enter_hour_fn ()"
+
+.SS "void enter_min_fn ()"
+
+.SS "void enter_sec_fn ()"
+
+.SS "void error_fn ()"
+
+.SS "void fsm (\fBstate\fP ps, \fBkey\fP keyval)"
+
+.SS "void set_fn ()"
+
+.SS "void set_hours_fn ()"
+
+.SS "void set_mins_fn ()"
+
+.SS "void set_sec_fn ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const \fBtransition\fP hours_transitions[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        
+        {digit,    hours,      digit_in_fn},
+    
+        {s,    set,        set_fn},
+        
+        {enter,   idle,    enter_hour_fn    },
+        
+        {eol,   idle,     error_fn}     
+        }
+.fi
+.SS "const \fBtransition\fP idle_transitions[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        
+        
+        {s,    set,        set_fn},
+        
+        {eol,   idle,     error_fn} }
+.fi
+.SS "const \fBtransition\fP minutes_transitions[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        
+        {digit,    mins,      digit_in_fn},
+        
+        {s,    set,        set_fn},
+        
+        {enter,   idle,    enter_min_fn},
+        
+        {eol,   idle,     error_fn} 
+        }
+.fi
+.SS "const \fBtransition\fP* ps_transition_ptr[5]"
+\fBInitial value:\fP
+.PP
+.nf
+=
+
+    {idle_transitions,
+        set_transitions,
+        hours_transitions,
+        minutes_transitions,
+        seconds_transitions
+    }
+.fi
+.SS "const \fBtransition\fP seconds_transitions[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+                
+        {digit,    sec,      digit_in_fn},
+    
+        {s,    set,        set_fn},
+        
+        {enter,   idle,    enter_sec_fn},
+        
+        {eol,   idle,     error_fn} 
+        }
+.fi
+.SS "const \fBtransition\fP set_transitions[]"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+        
+        {h,    hours,        set_hours_fn},
+    
+        {m,    mins,        set_mins_fn},
+    
+        {sec,    secs,        set_sec_fn},      
+        
+        {eol,   idle,     error_fn}
+        }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 12: Data Logger from the source code\&.

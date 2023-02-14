@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_a_d_c_8h" kind="file" language="C++">
+    <compoundname>ADC.h</compoundname>
+    <includedby refid="_a_d_c_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.c</label>
+        <link refid="_a_d_c_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" prot="public" static="no">
+        <name>RES12_Bm</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="14" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="20" column="19" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" compoundref="_a_d_c_8c" startline="83" endline="124">convert</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="21" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" compoundref="_d_s1306___r_t_c_drivers_8c" startline="195" endline="217">read_RTC</referencedby>
+        <referencedby refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" compoundref="_u_s_a_r_t3_8c" startline="64" endline="78">transmit_USART</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int boolean</definition>
+        <argsstring></argsstring>
+        <name>boolean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="22" column="14" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_lcd_dog</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_lcd_dog</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="15" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DOG_LCD.c" bodystart="218" bodyend="245" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" declline="15" declcolumn="6"/>
+        <references refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" compoundref="_d_o_g___l_c_d_8h" startline="19">dsp_buff1</references>
+        <references refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" compoundref="_d_o_g___l_c_d_8h" startline="20">dsp_buff2</references>
+        <references refid="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" compoundref="_d_o_g___l_c_d_8h" startline="21">dsp_buff3</references>
+        <references refid="_d_o_g___l_c_d_8c_1a0f268347583db61f04a11de5afafb08b" compoundref="_d_o_g___l_c_d_8c" startline="52" endline="65">init_spi_lcd</references>
+        <references refid="_d_o_g___l_c_d_8c_1a205b93dbe1746b39bd336433477288e6" compoundref="_d_o_g___l_c_d_8c" startline="88" endline="96">lcd_spi_transmit_CMD</references>
+        <references refid="_d_o_g___l_c_d_8c_1a51afd1a24d1b380a61fd6518e04c61e4" compoundref="_d_o_g___l_c_d_8c" startline="117" endline="128">lcd_spi_transmit_DATA</references>
+        <referencedby refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" compoundref="main_8c" startline="84" endline="97">ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_c_8h_1ab15cf82f0329bc4d7262c03559eaaa8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_adc</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_adc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="16" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.c" bodystart="51" bodyend="61" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" declline="16" declcolumn="6"/>
+        <references refid="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" compoundref="_a_d_c_8h" startline="14">RES12_Bm</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="41" endline="61">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_c_8h_1a327f9c3ee8cea828ef8d17070a538447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void convert</definition>
+        <argsstring>(void)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" line="17" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.c" bodystart="83" bodyend="124" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h" declline="17" declcolumn="6"/>
+        <references refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" compoundref="_d_o_g___l_c_d_8h" startline="20">dsp_buff2</references>
+        <references refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" compoundref="_a_d_c_8h" startline="20">result</references>
+        <referencedby refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" compoundref="main_8c" startline="84" endline="97">ISR</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ADC.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>header<sp/>for<sp/>ADC</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created:<sp/>4/14/2021<sp/>10:43:59<sp/>AM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>Tyler<sp/>Ovenden<sp/>112122685</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES12_Bm<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" kindref="member">update_lcd_dog</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1ab15cf82f0329bc4d7262c03559eaaa8e" kindref="member">init_adc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a327f9c3ee8cea828ef8d17070a538447" kindref="member">convert</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="21" refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" kindref="member">temp</ref>;</highlight></codeline>
+<codeline lineno="22" refid="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" kindref="member">boolean</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ADC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/ADC.h"/>
+  </compounddef>
+</doxygen>

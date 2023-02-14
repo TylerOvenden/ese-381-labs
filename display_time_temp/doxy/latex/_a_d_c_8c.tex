@@ -1,0 +1,83 @@
+\hypertarget{_a_d_c_8c}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/display\+\_\+time\+\_\+temp/display\+\_\+time\+\_\+temp/\+ADC.c File Reference}
+\label{_a_d_c_8c}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/ADC.c@{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/ADC.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}DOG\+\_\+\+LCD.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ADC.\+h\char`\"{}}\newline
+Include dependency graph for ADC.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_a_d_c_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_a_d_c_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~4000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_a_d_c_8c_ab15cf82f0329bc4d7262c03559eaaa8e}{init\+\_\+adc}} (void)
+\item 
+void \mbox{\hyperlink{_a_d_c_8c_a9510513007fdd3344eef216776cad63a}{convert}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{_a_d_c_8c_a950699c6b4732a3e8f53df27b427ad83}{hex}} \mbox{[}16\mbox{]} = \char`\"{}0123456789ABCDEF\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_a_d_c_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_a_d_c_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{ADC.c@{ADC.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~4000000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_a_d_c_8c_a9510513007fdd3344eef216776cad63a}\label{_a_d_c_8c_a9510513007fdd3344eef216776cad63a}} 
+\index{ADC.c@{ADC.c}!convert@{convert}}
+\index{convert@{convert}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily void convert (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{_a_d_c_8c_a9510513007fdd3344eef216776cad63a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_a_d_c_8c_ab15cf82f0329bc4d7262c03559eaaa8e}\label{_a_d_c_8c_ab15cf82f0329bc4d7262c03559eaaa8e}} 
+\index{ADC.c@{ADC.c}!init\_adc@{init\_adc}}
+\index{init\_adc@{init\_adc}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{init\_adc()}{init\_adc()}}
+{\footnotesize\ttfamily void init\+\_\+adc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{_a_d_c_8c_ab15cf82f0329bc4d7262c03559eaaa8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_a_d_c_8c_a950699c6b4732a3e8f53df27b427ad83}\label{_a_d_c_8c_a950699c6b4732a3e8f53df27b427ad83}} 
+\index{ADC.c@{ADC.c}!hex@{hex}}
+\index{hex@{hex}!ADC.c@{ADC.c}}
+\doxysubsubsection{\texorpdfstring{hex}{hex}}
+{\footnotesize\ttfamily char hex\mbox{[}16\mbox{]} = \char`\"{}0123456789ABCDEF\char`\"{}}
+

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="_a_d_c_8c" kind="file"><name>ADC.c</name>
+    <member refid="_a_d_c_8c_1a43bafb28b29491ec7f871319b5a3b2f8" kind="define"><name>F_CPU</name></member>
+    <member refid="_a_d_c_8c_1a950699c6b4732a3e8f53df27b427ad83" kind="variable"><name>hex</name></member>
+    <member refid="_a_d_c_8c_1ab15cf82f0329bc4d7262c03559eaaa8e" kind="function"><name>init_adc</name></member>
+    <member refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" kind="function"><name>convert</name></member>
+    <member refid="_a_d_c_8c_1a1cec629e5eb33a4b204d5f8a534c6558" kind="function"><name>displayVolt</name></member>
+    <member refid="_a_d_c_8c_1a8fa59d8534ce08c4964b6347edb97a2f" kind="function"><name>convertToBCD</name></member>
+  </compound>
+  <compound refid="_a_d_c_8h" kind="file"><name>ADC.h</name>
+    <member refid="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" kind="define"><name>RES12_Bm</name></member>
+    <member refid="_a_d_c_8h_1aab1989327f2a212d93af562328a4e2de" kind="variable"><name>tempHex</name></member>
+    <member refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" kind="variable"><name>result</name></member>
+    <member refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" kind="variable"><name>temp</name></member>
+    <member refid="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" kind="variable"><name>boolean</name></member>
+    <member refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" kind="function"><name>update_lcd_dog</name></member>
+    <member refid="_a_d_c_8h_1a327f9c3ee8cea828ef8d17070a538447" kind="function"><name>convert</name></member>
+    <member refid="_a_d_c_8h_1a1cec629e5eb33a4b204d5f8a534c6558" kind="function"><name>displayVolt</name></member>
+    <member refid="_a_d_c_8h_1a64c5ca25678bfa4ec7030e65bfe65104" kind="function"><name>convertToBCD</name></member>
+  </compound>
+  <compound refid="_d_o_g___l_c_d_8c" kind="file"><name>DOG_LCD.c</name>
+    <member refid="_d_o_g___l_c_d_8c_1a43bafb28b29491ec7f871319b5a3b2f8" kind="define"><name>F_CPU</name></member>
+    <member refid="_d_o_g___l_c_d_8c_1a0f268347583db61f04a11de5afafb08b" kind="function"><name>init_spi_lcd</name></member>
+    <member refid="_d_o_g___l_c_d_8c_1a205b93dbe1746b39bd336433477288e6" kind="function"><name>lcd_spi_transmit_CMD</name></member>
+    <member refid="_d_o_g___l_c_d_8c_1a51afd1a24d1b380a61fd6518e04c61e4" kind="function"><name>lcd_spi_transmit_DATA</name></member>
+    <member refid="_d_o_g___l_c_d_8c_1a4c0ca25c2b5e3649f7f1ba5e2af92746" kind="function"><name>init_lcd_dog</name></member>
+    <member refid="_d_o_g___l_c_d_8c_1a130db492e8cd5bb6382659d6279ba4bb" kind="function"><name>update_lcd_dog</name></member>
+  </compound>
+  <compound refid="_d_o_g___l_c_d_8h" kind="file"><name>DOG_LCD.h</name>
+    <member refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" kind="variable"><name>dsp_buff1</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" kind="variable"><name>dsp_buff2</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" kind="variable"><name>dsp_buff3</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1a205b93dbe1746b39bd336433477288e6" kind="function"><name>lcd_spi_transmit_CMD</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1adec1609f42ca19fece94c0c1f71b3996" kind="function"><name>lcd_spi_transmit_DATA</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1a0f268347583db61f04a11de5afafb08b" kind="function"><name>init_spi_lcd</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1a4c0ca25c2b5e3649f7f1ba5e2af92746" kind="function"><name>init_lcd_dog</name></member>
+    <member refid="_d_o_g___l_c_d_8h_1a130db492e8cd5bb6382659d6279ba4bb" kind="function"><name>update_lcd_dog</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1a43bafb28b29491ec7f871319b5a3b2f8" kind="define"><name>F_CPU</name></member>
+    <member refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_dfdf6df4e586ddcc0424b15363c8543d" kind="dir"><name>C:/Users/vleen/Documents/Atmel Studio/7.0</name>
+  </compound>
+  <compound refid="dir_b5cadf8a389803972ae8f0a35dab055f" kind="dir"><name>C:/Users/vleen/Documents/Atmel Studio</name>
+  </compound>
+  <compound refid="dir_a9d65da3c15cd637e0c44ccb72bbd8b1" kind="dir"><name>C:/Users/vleen/Documents</name>
+  </compound>
+  <compound refid="dir_755c5e5fe1e801a971092371cd58b342" kind="dir"><name>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10</name>
+  </compound>
+  <compound refid="dir_8c121b083e42d97daafed75ad3fd9690" kind="dir"><name>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+  <compound refid="dir_259cda12087c985ed90d2a35fc47830c" kind="dir"><name>C:/Users/vleen</name>
+  </compound>
+</doxygenindex>

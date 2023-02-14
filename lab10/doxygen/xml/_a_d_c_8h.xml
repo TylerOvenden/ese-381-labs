@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_a_d_c_8h" kind="file" language="C++">
+    <compoundname>ADC.h</compoundname>
+    <includedby refid="_a_d_c_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/main.c</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c</label>
+        <link refid="_a_d_c_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" prot="public" static="no">
+        <name>RES12_Bm</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="12" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_d_c_8h_1aab1989327f2a212d93af562328a4e2de" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tempHex[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tempHex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="20" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8c_1a1cec629e5eb33a4b204d5f8a534c6558" compoundref="_a_d_c_8c" startline="136" endline="155">displayVolt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="21" column="19" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" compoundref="_a_d_c_8c" startline="82" endline="116">convert</referencedby>
+        <referencedby refid="_a_d_c_8c_1a8fa59d8534ce08c4964b6347edb97a2f" compoundref="_a_d_c_8c" startline="174" endline="187">convertToBCD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="22" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int boolean</definition>
+        <argsstring></argsstring>
+        <name>boolean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="23" column="14" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_lcd_dog</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_lcd_dog</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="13" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="221" bodyend="248" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" declline="13" declcolumn="6"/>
+        <references refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" compoundref="_d_o_g___l_c_d_8h" startline="19">dsp_buff1</references>
+        <references refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" compoundref="_d_o_g___l_c_d_8h" startline="20">dsp_buff2</references>
+        <references refid="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" compoundref="_d_o_g___l_c_d_8h" startline="21">dsp_buff3</references>
+        <references refid="_d_o_g___l_c_d_8c_1a0f268347583db61f04a11de5afafb08b" compoundref="_d_o_g___l_c_d_8c" startline="52" endline="65">init_spi_lcd</references>
+        <references refid="_d_o_g___l_c_d_8c_1a205b93dbe1746b39bd336433477288e6" compoundref="_d_o_g___l_c_d_8c" startline="88" endline="95">lcd_spi_transmit_CMD</references>
+        <references refid="_d_o_g___l_c_d_8c_1a51afd1a24d1b380a61fd6518e04c61e4" compoundref="_d_o_g___l_c_d_8c" startline="121" endline="128">lcd_spi_transmit_DATA</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="35" endline="45">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_c_8h_1a327f9c3ee8cea828ef8d17070a538447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void convert</definition>
+        <argsstring>(void)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="14" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c" bodystart="82" bodyend="116" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" declline="14" declcolumn="6"/>
+        <references refid="_a_d_c_8c_1a8fa59d8534ce08c4964b6347edb97a2f" compoundref="_a_d_c_8c" startline="174" endline="187">convertToBCD</references>
+        <references refid="_a_d_c_8c_1a1cec629e5eb33a4b204d5f8a534c6558" compoundref="_a_d_c_8c" startline="136" endline="155">displayVolt</references>
+        <references refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" compoundref="_a_d_c_8h" startline="21">result</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="35" endline="45">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_c_8h_1a1cec629e5eb33a4b204d5f8a534c6558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void displayVolt</definition>
+        <argsstring>(uint16_t r)</argsstring>
+        <name>displayVolt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="15" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c" bodystart="136" bodyend="155" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" declline="15" declcolumn="6"/>
+        <references refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" compoundref="_d_o_g___l_c_d_8h" startline="19">dsp_buff1</references>
+        <references refid="_a_d_c_8c_1a950699c6b4732a3e8f53df27b427ad83" compoundref="_a_d_c_8c" startline="30">hex</references>
+        <references refid="_a_d_c_8h_1aab1989327f2a212d93af562328a4e2de" compoundref="_a_d_c_8h" startline="20">tempHex</references>
+        <referencedby refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" compoundref="_a_d_c_8c" startline="82" endline="116">convert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_c_8h_1a64c5ca25678bfa4ec7030e65bfe65104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t convertToBCD</definition>
+        <argsstring>(uint16_t dec)</argsstring>
+        <name>convertToBCD</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>dec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" line="16" column="10" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c" bodystart="174" bodyend="187" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" declline="16" declcolumn="10"/>
+        <references refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" compoundref="_a_d_c_8h" startline="21">result</references>
+        <referencedby refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" compoundref="_a_d_c_8c" startline="82" endline="116">convert</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ADC.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>4/14/2021<sp/>11:06:39<sp/>AM</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>vleen</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_a_d_c_8h_1aeb80ba2c1398a20e1c863d5b8f3176e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES12_Bm<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" kindref="member">update_lcd_dog</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a327f9c3ee8cea828ef8d17070a538447" kindref="member">convert</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a1cec629e5eb33a4b204d5f8a534c6558" kindref="member">displayVolt</ref>(uint16_t<sp/>r);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">uint32_t<sp/><ref refid="_a_d_c_8h_1a64c5ca25678bfa4ec7030e65bfe65104" kindref="member">convertToBCD</ref>(uint16_t<sp/>dec);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_a_d_c_8h_1aab1989327f2a212d93af562328a4e2de" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1aab1989327f2a212d93af562328a4e2de" kindref="member">tempHex</ref>[3];</highlight></codeline>
+<codeline lineno="21" refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="_a_d_c_8h_1a7e8b4baf0386e1c2225b08790f3c3ec4" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="22" refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" kindref="member">temp</ref>;</highlight></codeline>
+<codeline lineno="23" refid="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1ae3fc486a214e79b34c3efd0b1361cf88" kindref="member">boolean</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ADC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h"/>
+  </compounddef>
+</doxygen>

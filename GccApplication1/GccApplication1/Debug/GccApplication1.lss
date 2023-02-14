@@ -1,0 +1,150 @@
+
+GccApplication1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00804000  00804000  00000196  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000142  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000196  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001c8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000208  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00003015  00000000  00000000  00000228  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00002d5e  00000000  00000000  0000323d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002d6  00000000  00000000  00005f9b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00006274  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00001652  00000000  00000000  00006298  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000010  00000000  00000000  000078ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 7a 00 	jmp	0xf4	; 0xf4 <__ctors_end>
+   4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+   8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+   c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  10:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  14:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  18:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  1c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  20:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  24:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  28:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  2c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  30:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  34:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  38:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  3c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  40:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  44:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  48:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  4c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  50:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  54:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  58:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  5c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  60:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  64:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  68:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  6c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  70:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  74:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  78:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  7c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  80:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  84:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  88:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  8c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  90:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  94:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  98:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  9c:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  a0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  a4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  a8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  ac:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  b0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  b4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  b8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  bc:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  c0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  c4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  c8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  cc:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  d0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  d4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  d8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  dc:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  e0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  e4:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  e8:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  ec:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+  f0:	0c 94 84 00 	jmp	0x108	; 0x108 <__bad_interrupt>
+
+000000f4 <__ctors_end>:
+  f4:	11 24       	eor	r1, r1
+  f6:	1f be       	out	0x3f, r1	; 63
+  f8:	cf ef       	ldi	r28, 0xFF	; 255
+  fa:	cd bf       	out	0x3d, r28	; 61
+  fc:	df e7       	ldi	r29, 0x7F	; 127
+  fe:	de bf       	out	0x3e, r29	; 62
+ 100:	0e 94 86 00 	call	0x10c	; 0x10c <main>
+ 104:	0c 94 9f 00 	jmp	0x13e	; 0x13e <_exit>
+
+00000108 <__bad_interrupt>:
+ 108:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000010c <main>:
+#define XORSTATE 3
+#define NANDCO 4
+//B
+int main(void)
+{
+	PORTA_DIR = 0x1F; //setting pins 7-5 to inputs for switch
+ 10c:	8f e1       	ldi	r24, 0x1F	; 31
+ 10e:	80 93 00 04 	sts	0x0400, r24	; 0x800400 <__TEXT_REGION_LENGTH__+0x7e0400>
+	PORTB_DIR = 0xFE;  //setting pin 0 to input for push button
+ 112:	8e ef       	ldi	r24, 0xFE	; 254
+ 114:	80 93 20 04 	sts	0x0420, r24	; 0x800420 <__TEXT_REGION_LENGTH__+0x7e0420>
+	PORTC_DIR = 0xE0; //setting pins 7-5 as inputs
+ 118:	80 ee       	ldi	r24, 0xE0	; 224
+ 11a:	80 93 40 04 	sts	0x0440, r24	; 0x800440 <__TEXT_REGION_LENGTH__+0x7e0440>
+	PORTD_DIR = 0xFF;  //setting PORTD as outputs, using this for 
+ 11e:	8f ef       	ldi	r24, 0xFF	; 255
+ 120:	80 93 60 04 	sts	0x0460, r24	; 0x800460 <__TEXT_REGION_LENGTH__+0x7e0460>
+	//the inputs in 
+	PORTE_DIR = 0x0F; //
+ 124:	8f e0       	ldi	r24, 0x0F	; 15
+ 126:	80 93 80 04 	sts	0x0480, r24	; 0x800480 <__TEXT_REGION_LENGTH__+0x7e0480>
+	
+	PORTA_PIN7CTRL = PORT_PULLUPEN_bm;
+ 12a:	88 e0       	ldi	r24, 0x08	; 8
+ 12c:	80 93 17 04 	sts	0x0417, r24	; 0x800417 <__TEXT_REGION_LENGTH__+0x7e0417>
+	PORTA_PIN6CTRL = PORT_PULLUPEN_bm;
+ 130:	80 93 16 04 	sts	0x0416, r24	; 0x800416 <__TEXT_REGION_LENGTH__+0x7e0416>
+	PORTA_PIN5CTRL = PORT_PULLUPEN_bm;
+ 134:	80 93 15 04 	sts	0x0415, r24	; 0x800415 <__TEXT_REGION_LENGTH__+0x7e0415>
+		int ic = -1;
+    /* Replace with your application code */
+    while (1) 
+    {
+	
+		uint8_t test = PORTA_IN;
+ 138:	80 91 08 04 	lds	r24, 0x0408	; 0x800408 <__TEXT_REGION_LENGTH__+0x7e0408>
+ 13c:	fd cf       	rjmp	.-6      	; 0x138 <main+0x2c>
+
+0000013e <_exit>:
+ 13e:	f8 94       	cli
+
+00000140 <__stop_program>:
+ 140:	ff cf       	rjmp	.-2      	; 0x140 <__stop_program>

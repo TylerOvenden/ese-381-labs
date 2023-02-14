@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_d_o_g___l_c_d_8h" kind="file" language="C++">
+    <compoundname>DOG_LCD.h</compoundname>
+    <includedby refid="_a_d_c_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c</includedby>
+    <includedby refid="_d_o_g___l_c_d_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/main.c</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.c</label>
+        <link refid="_a_d_c_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c</label>
+        <link refid="_d_o_g___l_c_d_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h</label>
+        <link refid="_d_o_g___l_c_d_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff1[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="19" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8c_1a1cec629e5eb33a4b204d5f8a534c6558" compoundref="_a_d_c_8c" startline="136" endline="155">displayVolt</referencedby>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff2[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="20" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff3[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="21" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_o_g___l_c_d_8h_1a205b93dbe1746b39bd336433477288e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_spi_transmit_CMD</definition>
+        <argsstring>(unsigned char cmd)</argsstring>
+        <name>lcd_spi_transmit_CMD</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="13" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="88" bodyend="95" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" declline="13" declcolumn="6"/>
+        <referencedby refid="_d_o_g___l_c_d_8c_1a4c0ca25c2b5e3649f7f1ba5e2af92746" compoundref="_d_o_g___l_c_d_8c" startline="153" endline="200">init_lcd_dog</referencedby>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_o_g___l_c_d_8h_1adec1609f42ca19fece94c0c1f71b3996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_spi_transmit_DATA</definition>
+        <argsstring>(unsigned char cmd)</argsstring>
+        <name>lcd_spi_transmit_DATA</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="14" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="121" bodyend="128" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" declline="14" declcolumn="6"/>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_o_g___l_c_d_8h_1a0f268347583db61f04a11de5afafb08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_spi_lcd</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_spi_lcd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="15" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="52" bodyend="65" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" declline="15" declcolumn="6"/>
+        <referencedby refid="_d_o_g___l_c_d_8c_1a4c0ca25c2b5e3649f7f1ba5e2af92746" compoundref="_d_o_g___l_c_d_8c" startline="153" endline="200">init_lcd_dog</referencedby>
+        <referencedby refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="221" endline="248">update_lcd_dog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_o_g___l_c_d_8h_1a4c0ca25c2b5e3649f7f1ba5e2af92746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_lcd_dog</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_lcd_dog</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="16" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="153" bodyend="200" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" declline="16" declcolumn="6"/>
+        <references refid="_d_o_g___l_c_d_8c_1a0f268347583db61f04a11de5afafb08b" compoundref="_d_o_g___l_c_d_8c" startline="52" endline="65">init_spi_lcd</references>
+        <references refid="_d_o_g___l_c_d_8c_1a205b93dbe1746b39bd336433477288e6" compoundref="_d_o_g___l_c_d_8c" startline="88" endline="95">lcd_spi_transmit_CMD</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="35" endline="45">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_o_g___l_c_d_8h_1a130db492e8cd5bb6382659d6279ba4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_lcd_dog</definition>
+        <argsstring>(void)</argsstring>
+        <name>update_lcd_dog</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" line="17" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" bodystart="221" bodyend="248" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DOG_LCD.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>header<sp/>for<sp/>DOG_LCD</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created:<sp/>4/14/2021<sp/>10:43:59<sp/>AM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/><sp/>Tyler<sp/>Ovenden<sp/>112122685</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOG_LCD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOG_LCD_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1a205b93dbe1746b39bd336433477288e6" kindref="member">lcd_spi_transmit_CMD</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cmd);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1adec1609f42ca19fece94c0c1f71b3996" kindref="member">lcd_spi_transmit_DATA</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cmd);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1a0f268347583db61f04a11de5afafb08b" kindref="member">init_spi_lcd</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1a4c0ca25c2b5e3649f7f1ba5e2af92746" kindref="member">init_lcd_dog</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1a130db492e8cd5bb6382659d6279ba4bb" kindref="member">update_lcd_dog</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" kindref="member">dsp_buff1</ref>[17];</highlight></codeline>
+<codeline lineno="20" refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" kindref="member">dsp_buff2</ref>[17];</highlight></codeline>
+<codeline lineno="21" refid="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_o_g___l_c_d_8h_1ac5bc895d9c00fb29441604b67fa349e5" kindref="member">dsp_buff3</ref>[17];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DOG_LCD_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.h"/>
+  </compounddef>
+</doxygen>

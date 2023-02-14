@@ -1,0 +1,99 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" 3 "Wed Apr 28 2021" "Version 1.0" "Lab 12: Data Logger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRTCRead\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBRTCWrite\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBCTRL_REG\fP   0x8F"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSPI_rtc_ds1306_config\fP (void)"
+.br
+.ti -1c
+.RI "void \fBwrite_RTC\fP (unsigned char reg_RTC, unsigned char data_RTC)"
+.br
+.ti -1c
+.RI "unsigned char \fBread_RTC\fP (unsigned char reg_RTC)"
+.br
+.ti -1c
+.RI "void \fBblock_write_RTC\fP (volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)"
+.br
+.ti -1c
+.RI "void \fBblock_read_RTC\fP (volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)"
+.br
+.ti -1c
+.RI "void \fBwrite_read_RTC_test\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBdsp_buff1\fP [17]"
+.br
+.ti -1c
+.RI "char \fBdsp_buff2\fP [17]"
+.br
+.ti -1c
+.RI "char \fBdsp_buff3\fP [17]"
+.br
+.ti -1c
+.RI "volatile unsigned char \fBRTC_time_date_read\fP [7]"
+.br
+.ti -1c
+.RI "volatile unsigned char * \fBp\fP [7]"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CTRL_REG   0x8F"
+
+.SS "#define RTCRead   0x00"
+
+.SS "#define RTCWrite   0x80"
+
+.SH "Function Documentation"
+.PP 
+.SS "void block_read_RTC (volatile unsigned char * array_ptr, unsigned char strt_addr, unsigned char count)"
+
+.SS "void block_write_RTC (volatile unsigned char * array_ptr, unsigned char strt_addr, unsigned char count)"
+
+.SS "unsigned char read_RTC (unsigned char reg_RTC)"
+
+.SS "void SPI_rtc_ds1306_config (void)"
+
+.SS "void write_read_RTC_test (void)"
+
+.SS "void write_RTC (unsigned char reg_RTC, unsigned char data_RTC)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "char dsp_buff1[17]"
+
+.SS "char dsp_buff2[17]"
+
+.SS "char dsp_buff3[17]"
+
+.SS "volatile unsigned char* p[7]"
+
+.SS "volatile unsigned char RTC_time_date_read[7]"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 12: Data Logger from the source code\&.

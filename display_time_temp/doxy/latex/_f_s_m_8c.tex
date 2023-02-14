@@ -1,0 +1,287 @@
+\hypertarget{_f_s_m_8c}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/display\+\_\+time\+\_\+temp/display\+\_\+time\+\_\+temp/\+FSM.c File Reference}
+\label{_f_s_m_8c}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/FSM.c@{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/FSM.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}FSM.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DS1306\+\_\+\+RTCDrivers.\+h\char`\"{}}\newline
+Include dependency graph for FSM.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{_f_s_m_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_af9399b68e34fa19e2e34bd5421adea7f}{fsm}} (\mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90}{state}} ps, \mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544}{key}} keyval)
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}{set\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_a8686e989bce0c071908b703db39fa19d}{set\+\_\+hours\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_ad3345dd52ffb075d4981803b1f00b686}{set\+\_\+mins\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_a115da05e50f9993fdd747d4c4d2561b5}{set\+\_\+sec\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}{digit\+\_\+in\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_ac745ae9602ee76e68746022ba3a9ea85}{enter\+\_\+hour\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_ab83f03132f6a40660d620d6a0733e2fa}{enter\+\_\+min\+\_\+fn}} ()
+\item 
+void \mbox{\hyperlink{_f_s_m_8c_af8d0bc41465d7f04223aae3427484350}{enter\+\_\+sec\+\_\+fn}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} \mbox{\hyperlink{_f_s_m_8c_a8dfc733fede7ddfb16aaa2d28084df3e}{idle\+\_\+transitions}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} \mbox{\hyperlink{_f_s_m_8c_aae3300fcda9b10c11373aae3eea239f2}{set\+\_\+transitions}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} \mbox{\hyperlink{_f_s_m_8c_a88554df5e8785b151791d00499b7b468}{hours\+\_\+transitions}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} \mbox{\hyperlink{_f_s_m_8c_a7dbad8f590fd127f9db582d8001ec1fa}{minutes\+\_\+transitions}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} \mbox{\hyperlink{_f_s_m_8c_aef23d2a5cff41b4abf030b9b59aca49a}{seconds\+\_\+transitions}} \mbox{[}$\,$\mbox{]}
+\item 
+const \mbox{\hyperlink{structtransition}{transition}} $\ast$ \mbox{\hyperlink{_f_s_m_8c_a3ecdd90e8c7f4673dfef5a27058aee86}{ps\+\_\+transition\+\_\+ptr}} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}\label{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}} 
+\index{FSM.c@{FSM.c}!digit\_in\_fn@{digit\_in\_fn}}
+\index{digit\_in\_fn@{digit\_in\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{digit\_in\_fn()}{digit\_in\_fn()}}
+{\footnotesize\ttfamily void digit\+\_\+in\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_f_s_m_8c_ac745ae9602ee76e68746022ba3a9ea85}\label{_f_s_m_8c_ac745ae9602ee76e68746022ba3a9ea85}} 
+\index{FSM.c@{FSM.c}!enter\_hour\_fn@{enter\_hour\_fn}}
+\index{enter\_hour\_fn@{enter\_hour\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{enter\_hour\_fn()}{enter\_hour\_fn()}}
+{\footnotesize\ttfamily void enter\+\_\+hour\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{_f_s_m_8c_ac745ae9602ee76e68746022ba3a9ea85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_ab83f03132f6a40660d620d6a0733e2fa}\label{_f_s_m_8c_ab83f03132f6a40660d620d6a0733e2fa}} 
+\index{FSM.c@{FSM.c}!enter\_min\_fn@{enter\_min\_fn}}
+\index{enter\_min\_fn@{enter\_min\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{enter\_min\_fn()}{enter\_min\_fn()}}
+{\footnotesize\ttfamily void enter\+\_\+min\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{_f_s_m_8c_ab83f03132f6a40660d620d6a0733e2fa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_af8d0bc41465d7f04223aae3427484350}\label{_f_s_m_8c_af8d0bc41465d7f04223aae3427484350}} 
+\index{FSM.c@{FSM.c}!enter\_sec\_fn@{enter\_sec\_fn}}
+\index{enter\_sec\_fn@{enter\_sec\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{enter\_sec\_fn()}{enter\_sec\_fn()}}
+{\footnotesize\ttfamily void enter\+\_\+sec\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{_f_s_m_8c_af8d0bc41465d7f04223aae3427484350_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_a5fab541132b169559a396bfa60911365}\label{_f_s_m_8c_a5fab541132b169559a396bfa60911365}} 
+\index{FSM.c@{FSM.c}!error\_fn@{error\_fn}}
+\index{error\_fn@{error\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{error\_fn()}{error\_fn()}}
+{\footnotesize\ttfamily void error\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_f_s_m_8c_af9399b68e34fa19e2e34bd5421adea7f}\label{_f_s_m_8c_af9399b68e34fa19e2e34bd5421adea7f}} 
+\index{FSM.c@{FSM.c}!fsm@{fsm}}
+\index{fsm@{fsm}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{fsm()}{fsm()}}
+{\footnotesize\ttfamily void fsm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90}{state}}}]{ps,  }\item[{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544}{key}}}]{keyval }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{_f_s_m_8c_af9399b68e34fa19e2e34bd5421adea7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}\label{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}} 
+\index{FSM.c@{FSM.c}!set\_fn@{set\_fn}}
+\index{set\_fn@{set\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{set\_fn()}{set\_fn()}}
+{\footnotesize\ttfamily void set\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_f_s_m_8c_a8686e989bce0c071908b703db39fa19d}\label{_f_s_m_8c_a8686e989bce0c071908b703db39fa19d}} 
+\index{FSM.c@{FSM.c}!set\_hours\_fn@{set\_hours\_fn}}
+\index{set\_hours\_fn@{set\_hours\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{set\_hours\_fn()}{set\_hours\_fn()}}
+{\footnotesize\ttfamily void set\+\_\+hours\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{_f_s_m_8c_a8686e989bce0c071908b703db39fa19d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_ad3345dd52ffb075d4981803b1f00b686}\label{_f_s_m_8c_ad3345dd52ffb075d4981803b1f00b686}} 
+\index{FSM.c@{FSM.c}!set\_mins\_fn@{set\_mins\_fn}}
+\index{set\_mins\_fn@{set\_mins\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{set\_mins\_fn()}{set\_mins\_fn()}}
+{\footnotesize\ttfamily void set\+\_\+mins\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{_f_s_m_8c_ad3345dd52ffb075d4981803b1f00b686_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_f_s_m_8c_a115da05e50f9993fdd747d4c4d2561b5}\label{_f_s_m_8c_a115da05e50f9993fdd747d4c4d2561b5}} 
+\index{FSM.c@{FSM.c}!set\_sec\_fn@{set\_sec\_fn}}
+\index{set\_sec\_fn@{set\_sec\_fn}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{set\_sec\_fn()}{set\_sec\_fn()}}
+{\footnotesize\ttfamily void set\+\_\+sec\+\_\+fn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_f_s_m_8c_a115da05e50f9993fdd747d4c4d2561b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_f_s_m_8c_a88554df5e8785b151791d00499b7b468}\label{_f_s_m_8c_a88554df5e8785b151791d00499b7b468}} 
+\index{FSM.c@{FSM.c}!hours\_transitions@{hours\_transitions}}
+\index{hours\_transitions@{hours\_transitions}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{hours\_transitions}{hours\_transitions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}} hours\+\_\+transitions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d}{digit}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28}{hours}},      \mbox{\hyperlink{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}{digit\_in\_fn}}\},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55}{s}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4}{set}},        \mbox{\hyperlink{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}{set\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b}{enter}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},    \mbox{\hyperlink{_f_s_m_8c_ac745ae9602ee76e68746022ba3a9ea85}{enter\_hour\_fn}}  \},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d}{eol}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},     \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\_fn}}\}      }
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_f_s_m_8c_a8dfc733fede7ddfb16aaa2d28084df3e}\label{_f_s_m_8c_a8dfc733fede7ddfb16aaa2d28084df3e}} 
+\index{FSM.c@{FSM.c}!idle\_transitions@{idle\_transitions}}
+\index{idle\_transitions@{idle\_transitions}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{idle\_transitions}{idle\_transitions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}} idle\+\_\+transitions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55}{s}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4}{set}},        \mbox{\hyperlink{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}{set\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d}{eol}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},     \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\_fn}}\}  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_f_s_m_8c_a7dbad8f590fd127f9db582d8001ec1fa}\label{_f_s_m_8c_a7dbad8f590fd127f9db582d8001ec1fa}} 
+\index{FSM.c@{FSM.c}!minutes\_transitions@{minutes\_transitions}}
+\index{minutes\_transitions@{minutes\_transitions}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{minutes\_transitions}{minutes\_transitions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}} minutes\+\_\+transitions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d}{digit}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f}{mins}},      \mbox{\hyperlink{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}{digit\_in\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55}{s}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4}{set}},        \mbox{\hyperlink{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}{set\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b}{enter}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},    \mbox{\hyperlink{_f_s_m_8c_ab83f03132f6a40660d620d6a0733e2fa}{enter\_min\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d}{eol}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},     \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\_fn}}\}  }
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_f_s_m_8c_a3ecdd90e8c7f4673dfef5a27058aee86}\label{_f_s_m_8c_a3ecdd90e8c7f4673dfef5a27058aee86}} 
+\index{FSM.c@{FSM.c}!ps\_transition\_ptr@{ps\_transition\_ptr}}
+\index{ps\_transition\_ptr@{ps\_transition\_ptr}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{ps\_transition\_ptr}{ps\_transition\_ptr}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}}$\ast$ ps\+\_\+transition\+\_\+ptr\mbox{[}5\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \{\mbox{\hyperlink{_f_s_m_8c_a8dfc733fede7ddfb16aaa2d28084df3e}{idle\_transitions}},}
+\DoxyCodeLine{        \mbox{\hyperlink{_f_s_m_8c_aae3300fcda9b10c11373aae3eea239f2}{set\_transitions}},}
+\DoxyCodeLine{        \mbox{\hyperlink{_f_s_m_8c_a88554df5e8785b151791d00499b7b468}{hours\_transitions}},}
+\DoxyCodeLine{        \mbox{\hyperlink{_f_s_m_8c_a7dbad8f590fd127f9db582d8001ec1fa}{minutes\_transitions}},}
+\DoxyCodeLine{        \mbox{\hyperlink{_f_s_m_8c_aef23d2a5cff41b4abf030b9b59aca49a}{seconds\_transitions}}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_f_s_m_8c_aef23d2a5cff41b4abf030b9b59aca49a}\label{_f_s_m_8c_aef23d2a5cff41b4abf030b9b59aca49a}} 
+\index{FSM.c@{FSM.c}!seconds\_transitions@{seconds\_transitions}}
+\index{seconds\_transitions@{seconds\_transitions}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{seconds\_transitions}{seconds\_transitions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}} seconds\+\_\+transitions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{                }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d}{digit}},    \mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb}{sec}},      \mbox{\hyperlink{_f_s_m_8c_ac3e2dc1cc0527fcf05a4f6f0b89c3750}{digit\_in\_fn}}\},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55}{s}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4}{set}},        \mbox{\hyperlink{_f_s_m_8c_ab68e0acd6a7568f8d1162f96772099f7}{set\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b}{enter}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},    \mbox{\hyperlink{_f_s_m_8c_af8d0bc41465d7f04223aae3427484350}{enter\_sec\_fn}}\},}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d}{eol}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},     \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\_fn}}\}  }
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_f_s_m_8c_aae3300fcda9b10c11373aae3eea239f2}\label{_f_s_m_8c_aae3300fcda9b10c11373aae3eea239f2}} 
+\index{FSM.c@{FSM.c}!set\_transitions@{set\_transitions}}
+\index{set\_transitions@{set\_transitions}!FSM.c@{FSM.c}}
+\doxysubsubsection{\texorpdfstring{set\_transitions}{set\_transitions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structtransition}{transition}} set\+\_\+transitions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a83684c9789c44b5b6edca6ae4ae1eeb5}{h}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28}{hours}},        \mbox{\hyperlink{_f_s_m_8c_a8686e989bce0c071908b703db39fa19d}{set\_hours\_fn}}\},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544aca3cf2ca9e0e7f4e96f2bbc362b9353a}{m}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f}{mins}},        \mbox{\hyperlink{_f_s_m_8c_ad3345dd52ffb075d4981803b1f00b686}{set\_mins\_fn}}\},}
+\DoxyCodeLine{    }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb}{sec}},    \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a8bacf0f7f796c293c657fb73583dc955}{secs}},        \mbox{\hyperlink{_f_s_m_8c_a115da05e50f9993fdd747d4c4d2561b5}{set\_sec\_fn}}\},     }
+\DoxyCodeLine{        }
+\DoxyCodeLine{        \{\mbox{\hyperlink{_f_s_m_8h_ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d}{eol}},   \mbox{\hyperlink{_f_s_m_8h_adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242}{idle}},     \mbox{\hyperlink{_f_s_m_8c_a5fab541132b169559a396bfa60911365}{error\_fn}}\}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}

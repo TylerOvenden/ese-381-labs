@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">avr/io.h</includes>
+    <includes refid="_d_s1306___r_t_c_drivers_8h" local="yes">DS1306_RTCDrivers.h</includes>
+    <includes refid="_d_o_g___l_c_d_8h" local="yes">DOG_LCD.h</includes>
+    <includes refid="_a_d_c_8h" local="yes">ADC.h</includes>
+    <includes refid="_u_s_a_r_t3_8h" local="yes">USART3.h</includes>
+    <includes refid="_f_s_m_8h" local="yes">FSM.h</includes>
+    <includes local="no">avr/interrupt.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">util/delay.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DS1306_RTCDrivers.h</label>
+        <link refid="_d_s1306___r_t_c_drivers_8h"/>
+      </node>
+      <node id="8">
+        <label>avr/interrupt.h</label>
+      </node>
+      <node id="5">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+      </node>
+      <node id="7">
+        <label>FSM.h</label>
+        <link refid="_f_s_m_8h"/>
+      </node>
+      <node id="2">
+        <label>avr/io.h</label>
+      </node>
+      <node id="10">
+        <label>util/delay.h</label>
+      </node>
+      <node id="4">
+        <label>DOG_LCD.h</label>
+        <link refid="_d_o_g___l_c_d_8h"/>
+      </node>
+      <node id="6">
+        <label>USART3.h</label>
+        <link refid="_u_s_a_r_t3_8h"/>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="main_8c_1a43bafb28b29491ec7f871319b5a3b2f8" prot="public" static="no">
+        <name>F_CPU</name>
+        <initializer>4000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="31" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8c_1abdc8e0ac1c628ffce7fc18478f4ad6b3" prot="public" static="no">
+        <name>ALARM0SEC_write</name>
+        <initializer>0x87</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="35" column="12" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8c_1a8e192e716a2e2265ea5f43dfe6ab0050" prot="public" static="no">
+        <name>READ_STATUS</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="36" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ae1e113ca637d2af28b22659464940e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initInterupt</definition>
+        <argsstring>()</argsstring>
+        <name>initInterupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="146" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="146" bodyend="154" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" declline="38" declcolumn="6"/>
+        <references refid="main_8c_1abdc8e0ac1c628ffce7fc18478f4ad6b3" compoundref="main_8c" startline="35">ALARM0SEC_write</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" compoundref="_d_s1306___r_t_c_drivers_8h" startline="13">CTRL_REG</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="41" endline="61">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="41" column="5" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="41" bodyend="61"/>
+        <references refid="_a_d_c_8c_1ab15cf82f0329bc4d7262c03559eaaa8e" compoundref="_a_d_c_8c" startline="51" endline="61">init_adc</references>
+        <references refid="_u_s_a_r_t3_8c_1ab94fbb73b86fff26278a1372bea9833c" compoundref="_u_s_a_r_t3_8c" startline="37" endline="54">init_USART</references>
+        <references refid="main_8c_1ae1e113ca637d2af28b22659464940e53" compoundref="main_8c" startline="146" endline="154">initInterupt</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a09aa76f037a0188e8b754523e0a92557" compoundref="_d_s1306___r_t_c_drivers_8c" startline="48" endline="70">SPI_rtc_ds1306_config</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ISR</definition>
+        <argsstring>(PORTC_PORT_vect)</argsstring>
+        <name>ISR</name>
+        <param>
+          <type>PORTC_PORT_vect</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="84" column="1" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="84" bodyend="97"/>
+        <references refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" compoundref="_a_d_c_8c" startline="83" endline="124">convert</references>
+        <references refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" compoundref="_d_o_g___l_c_d_8c" startline="218" endline="245">update_lcd_dog</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a1f11fdfd6a878a854419434a4a401693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ISR</definition>
+        <argsstring>(USART3_RXC_vect)</argsstring>
+        <name>ISR</name>
+        <param>
+          <type>USART3_RXC_vect</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" line="118" column="1" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c" bodystart="118" bodyend="145"/>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" compoundref="_f_s_m_8h" startline="25">digit</references>
+        <references refid="_f_s_m_8h_1a8dcc1826427b09265c8466bfb477d2ff" compoundref="_f_s_m_8h" startline="23">digit_val</references>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" compoundref="_f_s_m_8h" startline="25">enter</references>
+        <references refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" compoundref="_f_s_m_8c" startline="104" endline="128">fsm</references>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a83684c9789c44b5b6edca6ae4ae1eeb5" compoundref="_f_s_m_8h" startline="25">h</references>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aca3cf2ca9e0e7f4e96f2bbc362b9353a" compoundref="_f_s_m_8h" startline="25">m</references>
+        <references refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" compoundref="_f_s_m_8h" startline="26">present_state</references>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" compoundref="_f_s_m_8h" startline="25">s</references>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" compoundref="_f_s_m_8h" startline="25">sec</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>display_time_temp_.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Title<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>4/27/2021</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Tyler<sp/>Ovenden<sp/>112122685</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION:<sp/><sp/>displays<sp/>the<sp/>temperature<sp/>&amp;<sp/>time<sp/>using<sp/>one<sp/>ISR<sp/>connected<sp/>to<sp/>1hz.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>another<sp/>ISR<sp/>lets<sp/>users<sp/>view<sp/>&amp;<sp/>change<sp/>values<sp/>for<sp/>hours,<sp/>mins<sp/>&amp;<sp/>seconds<sp/>using<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//FSM<sp/>methods<sp/>&amp;<sp/>the<sp/>teraterm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Warnings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restrictions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algorithms<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>References<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>History<sp/><sp/><sp/><sp/><sp/>:<sp/>Initial<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_s1306___r_t_c_drivers_8h" kindref="compound">DS1306_RTCDrivers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_o_g___l_c_d_8h" kindref="compound">DOG_LCD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_s_a_r_t3_8h" kindref="compound">USART3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_s_m_8h" kindref="compound">FSM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="main_8c_1a43bafb28b29491ec7f871319b5a3b2f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_CPU<sp/>4000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/interrupt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;util/delay.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="main_8c_1abdc8e0ac1c628ffce7fc18478f4ad6b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALARM0SEC_write<sp/>0x87</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="main_8c_1a8e192e716a2e2265ea5f43dfe6ab0050" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_STATUS<sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ae1e113ca637d2af28b22659464940e53" kindref="member">initInterupt</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a09aa76f037a0188e8b754523e0a92557" kindref="member">SPI_rtc_ds1306_config</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8c_1ab15cf82f0329bc4d7262c03559eaaa8e" kindref="member">init_adc</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1ae1e113ca637d2af28b22659464940e53" kindref="member">initInterupt</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t3_8c_1ab94fbb73b86fff26278a1372bea9833c" kindref="member">init_USART</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Replace<sp/>with<sp/>your<sp/>application<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;nop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;ISR<sp/>(PORTF_PORT_vect)<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>3/30/21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION:<sp/>ISR<sp/>that<sp/>is<sp/>triggered<sp/>by<sp/>1HZ<sp/>(PC1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>reads<sp/>the<sp/>switch<sp/>values<sp/>at<sp/>this<sp/>interupt<sp/>through<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>INTCAPA<sp/>register<sp/>&amp;<sp/>calls<sp/>the<sp/>function<sp/>for<sp/>writing<sp/>these</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>values<sp/>to<sp/>PORTB<sp/>of<sp/>MCP23S17<sp/>to<sp/>display<sp/>it<sp/>on<sp/>the<sp/>LEDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clears<sp/>the<sp/>flags<sp/>after<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Warnings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restrictions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algorithms<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>References<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>History<sp/><sp/><sp/><sp/><sp/>:<sp/>Initial<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" refkind="member"><highlight class="normal"><ref refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" kindref="member">ISR</ref><sp/>(PORTC_PORT_vect)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>cli();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//clears<sp/>the<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//block_read_RTC(temp,<sp/>CTRL_REG,<sp/>8);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//clear<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" kindref="member">write_read_RTC_test</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8c_1a9510513007fdd3344eef216776cad63a" kindref="member">convert</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a130db492e8cd5bb6382659d6279ba4bb" kindref="member">update_lcd_dog</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/>PORTC_INTFLAGS<sp/>=<sp/>PORT_INT2_bm;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;ISR(USART3_RXC_vect)<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>4/27/21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION:<sp/>ISR<sp/>for<sp/>USART3_RXC<sp/>interrupt<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>has<sp/>the<sp/>user<sp/>communicate<sp/>with<sp/>terateam<sp/>by<sp/>parsing<sp/>the<sp/>chars<sp/>typed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>each<sp/>char<sp/>is<sp/>placed<sp/>into<sp/>fsm<sp/>methods<sp/>from<sp/>the<sp/>fsm<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>used<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Warnings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restrictions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algorithms<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>References<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>History<sp/><sp/><sp/><sp/><sp/>:<sp/>Initial<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="main_8c_1a1f11fdfd6a878a854419434a4a401693" refkind="member"><highlight class="normal"><ref refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" kindref="member">ISR</ref>(USART3_RXC_vect){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>char_received;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>char_received<sp/>=<sp/>USART3_RXDATAL;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(char_received<sp/>==<sp/></highlight><highlight class="charliteral">&apos;s&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(char_received<sp/>==<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a83684c9789c44b5b6edca6ae4ae1eeb5" kindref="member">h</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(char_received<sp/>==<sp/></highlight><highlight class="charliteral">&apos;m&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aca3cf2ca9e0e7f4e96f2bbc362b9353a" kindref="member">m</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//char<sp/>for<sp/>secs<sp/>since<sp/>s<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(char_received<sp/>==<sp/></highlight><highlight class="charliteral">&apos;c&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" kindref="member">sec</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((char_received<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(char_received<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a8dcc1826427b09265c8466bfb477d2ff" kindref="member">digit_val</ref><sp/>=<sp/>char_received<sp/>&amp;<sp/>0x0F;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(char_received<sp/>==<sp/>0x0d){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref>(<ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref>,<sp/>char_received);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146" refid="main_8c_1ae1e113ca637d2af28b22659464940e53" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ae1e113ca637d2af28b22659464940e53" kindref="member">initInterupt</ref>(){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTC_DIR<sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTC_PIN3CTRL<sp/>=<sp/>PORT_ISC_FALLING_gc;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(<ref refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" kindref="member">CTRL_REG</ref>,<sp/>0x00);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//set<sp/>1hz<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(<ref refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" kindref="member">CTRL_REG</ref>,<sp/>0x04);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(<ref refid="main_8c_1abdc8e0ac1c628ffce7fc18478f4ad6b3" kindref="member">ALARM0SEC_write</ref>,<sp/>0x01);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c"/>
+  </compounddef>
+</doxygen>

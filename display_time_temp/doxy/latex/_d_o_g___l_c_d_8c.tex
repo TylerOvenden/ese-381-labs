@@ -1,0 +1,124 @@
+\hypertarget{_d_o_g___l_c_d_8c}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/display\+\_\+time\+\_\+temp/display\+\_\+time\+\_\+temp/\+DOG\+\_\+\+LCD.c File Reference}
+\label{_d_o_g___l_c_d_8c}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/DOG\_LCD.c@{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/DOG\_LCD.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}DOG\+\_\+\+LCD.\+h\char`\"{}}\newline
+Include dependency graph for DOG\+\_\+\+LCD.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_o_g___l_c_d_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_o_g___l_c_d_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~4000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_o_g___l_c_d_8c_a0f268347583db61f04a11de5afafb08b}{init\+\_\+spi\+\_\+lcd}} (void)
+\item 
+void \mbox{\hyperlink{_d_o_g___l_c_d_8c_a205b93dbe1746b39bd336433477288e6}{lcd\+\_\+spi\+\_\+transmit\+\_\+\+CMD}} (unsigned char cmd)
+\item 
+void \mbox{\hyperlink{_d_o_g___l_c_d_8c_a51afd1a24d1b380a61fd6518e04c61e4}{lcd\+\_\+spi\+\_\+transmit\+\_\+\+DATA}} (unsigned char data)
+\item 
+void \mbox{\hyperlink{_d_o_g___l_c_d_8c_a4c0ca25c2b5e3649f7f1ba5e2af92746}{init\+\_\+lcd\+\_\+dog}} (void)
+\item 
+void \mbox{\hyperlink{_d_o_g___l_c_d_8c_a130db492e8cd5bb6382659d6279ba4bb}{update\+\_\+lcd\+\_\+dog}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_d_o_g___l_c_d_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~4000000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a4c0ca25c2b5e3649f7f1ba5e2af92746}\label{_d_o_g___l_c_d_8c_a4c0ca25c2b5e3649f7f1ba5e2af92746}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!init\_lcd\_dog@{init\_lcd\_dog}}
+\index{init\_lcd\_dog@{init\_lcd\_dog}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{init\_lcd\_dog()}{init\_lcd\_dog()}}
+{\footnotesize\ttfamily void init\+\_\+lcd\+\_\+dog (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{_d_o_g___l_c_d_8c_a4c0ca25c2b5e3649f7f1ba5e2af92746_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a0f268347583db61f04a11de5afafb08b}\label{_d_o_g___l_c_d_8c_a0f268347583db61f04a11de5afafb08b}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!init\_spi\_lcd@{init\_spi\_lcd}}
+\index{init\_spi\_lcd@{init\_spi\_lcd}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{init\_spi\_lcd()}{init\_spi\_lcd()}}
+{\footnotesize\ttfamily void init\+\_\+spi\+\_\+lcd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{_d_o_g___l_c_d_8c_a0f268347583db61f04a11de5afafb08b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a205b93dbe1746b39bd336433477288e6}\label{_d_o_g___l_c_d_8c_a205b93dbe1746b39bd336433477288e6}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!lcd\_spi\_transmit\_CMD@{lcd\_spi\_transmit\_CMD}}
+\index{lcd\_spi\_transmit\_CMD@{lcd\_spi\_transmit\_CMD}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{lcd\_spi\_transmit\_CMD()}{lcd\_spi\_transmit\_CMD()}}
+{\footnotesize\ttfamily void lcd\+\_\+spi\+\_\+transmit\+\_\+\+CMD (\begin{DoxyParamCaption}\item[{unsigned char}]{cmd }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_o_g___l_c_d_8c_a205b93dbe1746b39bd336433477288e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a51afd1a24d1b380a61fd6518e04c61e4}\label{_d_o_g___l_c_d_8c_a51afd1a24d1b380a61fd6518e04c61e4}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!lcd\_spi\_transmit\_DATA@{lcd\_spi\_transmit\_DATA}}
+\index{lcd\_spi\_transmit\_DATA@{lcd\_spi\_transmit\_DATA}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{lcd\_spi\_transmit\_DATA()}{lcd\_spi\_transmit\_DATA()}}
+{\footnotesize\ttfamily void lcd\+\_\+spi\+\_\+transmit\+\_\+\+DATA (\begin{DoxyParamCaption}\item[{unsigned char}]{data }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_o_g___l_c_d_8c_a51afd1a24d1b380a61fd6518e04c61e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_o_g___l_c_d_8c_a130db492e8cd5bb6382659d6279ba4bb}\label{_d_o_g___l_c_d_8c_a130db492e8cd5bb6382659d6279ba4bb}} 
+\index{DOG\_LCD.c@{DOG\_LCD.c}!update\_lcd\_dog@{update\_lcd\_dog}}
+\index{update\_lcd\_dog@{update\_lcd\_dog}!DOG\_LCD.c@{DOG\_LCD.c}}
+\doxysubsubsection{\texorpdfstring{update\_lcd\_dog()}{update\_lcd\_dog()}}
+{\footnotesize\ttfamily void update\+\_\+lcd\+\_\+dog (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_d_o_g___l_c_d_8c_a130db492e8cd5bb6382659d6279ba4bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{_d_o_g___l_c_d_8c_a130db492e8cd5bb6382659d6279ba4bb_icgraph}
+\end{center}
+\end{figure}

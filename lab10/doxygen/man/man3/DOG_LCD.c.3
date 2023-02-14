@@ -1,0 +1,78 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c" 3 "Wed Apr 14 2021" "Version 1.0" "Temperature Measurement Multi Module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/DOG_LCD.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <avr/io\&.h>\fP
+.br
+\fC#include <avr/interrupt\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <util/delay\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'DOG_LCD\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBF_CPU\fP   4000000"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_spi_lcd\fP (void)"
+.br
+.ti -1c
+.RI "void \fBlcd_spi_transmit_CMD\fP (unsigned char cmd)"
+.br
+.ti -1c
+.RI "void \fBlcd_spi_transmit_DATA\fP (unsigned char data)"
+.br
+.ti -1c
+.RI "void \fBinit_lcd_dog\fP (void)"
+.br
+.ti -1c
+.RI "void \fBupdate_lcd_dog\fP (void)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define F_CPU   4000000"
+
+.PP
+Definition at line 23 of file DOG_LCD\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void init_lcd_dog (void)"
+
+.PP
+Definition at line 153 of file DOG_LCD\&.c\&.
+.SS "void init_spi_lcd (void)"
+
+.PP
+Definition at line 52 of file DOG_LCD\&.c\&.
+.SS "void lcd_spi_transmit_CMD (unsigned char cmd)"
+
+.PP
+Definition at line 88 of file DOG_LCD\&.c\&.
+.SS "void lcd_spi_transmit_DATA (unsigned char data)"
+
+.PP
+Definition at line 121 of file DOG_LCD\&.c\&.
+.SS "void update_lcd_dog (void)"
+
+.PP
+Definition at line 221 of file DOG_LCD\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Temperature Measurement Multi Module from the source code\&.

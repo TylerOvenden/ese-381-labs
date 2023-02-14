@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_d_s1306___r_t_c_drivers_8h" kind="file" language="C++">
+    <compoundname>DS1306_RTCDrivers.h</compoundname>
+    <includedby refid="_d_s1306___r_t_c_drivers_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c</includedby>
+    <includedby refid="_f_s_m_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c</includedby>
+    <includedby refid="_f_s_m___methods_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM_Methods.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</includedby>
+    <invincdepgraph>
+      <node id="5">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c</label>
+        <link refid="_d_s1306___r_t_c_drivers_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h</label>
+        <link refid="_d_s1306___r_t_c_drivers_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c</label>
+        <link refid="_f_s_m_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM_Methods.c</label>
+        <link refid="_f_s_m___methods_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_d_s1306___r_t_c_drivers_8h_1a0f3652205599fd81f361aeb79dda0cde" prot="public" static="no">
+        <name>RTCRead</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="11" column="17" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_s1306___r_t_c_drivers_8h_1a102032b9f3332eb37d97b86d2b7219b4" prot="public" static="no">
+        <name>RTCWrite</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="12" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" prot="public" static="no">
+        <name>CTRL_REG</name>
+        <initializer>0x8F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="13" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8h_1afc86fba50fc563b62b890a949ef7fcce" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff1[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="14" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff2[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="15" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8h_1ac5bc895d9c00fb29441604b67fa349e5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dsp_buff3[17]</definition>
+        <argsstring>[17]</argsstring>
+        <name>dsp_buff3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="16" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>volatile unsigned char RTC_time_date_read[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>RTC_time_date_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="19" column="24" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8h_1a3c69305cfd9150111fe7025beb3fc7d9" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>volatile unsigned char* p[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="20" column="24" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1a09aa76f037a0188e8b754523e0a92557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_rtc_ds1306_config</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI_rtc_ds1306_config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="22" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="48" bodyend="70" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="22" declcolumn="6"/>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="41" endline="61">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1a12ebcc19faf4ec1539ab9210ef56c04d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_RTC</definition>
+        <argsstring>(unsigned char reg_RTC, unsigned char data_RTC)</argsstring>
+        <name>write_RTC</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>reg_RTC</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>data_RTC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="23" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="168" bodyend="182" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="23" declcolumn="6"/>
+        <referencedby refid="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" compoundref="_f_s_m_8c" startline="165" endline="174">enter_hour_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" compoundref="_f_s_m_8c" startline="175" endline="183">enter_min_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" compoundref="_f_s_m_8c" startline="184" endline="193">enter_sec_fn</referencedby>
+        <referencedby refid="main_8c_1ae1e113ca637d2af28b22659464940e53" compoundref="main_8c" startline="146" endline="154">initInterupt</referencedby>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1a60a3d2d74834a30436281bd530a04553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char read_RTC</definition>
+        <argsstring>(unsigned char reg_RTC)</argsstring>
+        <name>read_RTC</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>reg_RTC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="24" column="15" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="195" bodyend="217" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="24" declcolumn="15"/>
+        <references refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" compoundref="_a_d_c_8h" startline="21">temp</references>
+        <referencedby refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" compoundref="_f_s_m_8c" startline="140" endline="144">set_hours_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" compoundref="_f_s_m_8c" startline="145" endline="150">set_mins_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" compoundref="_f_s_m_8c" startline="151" endline="154">set_sec_fn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1ab9b8e0a9e745786f1e8e58b887d29488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void block_write_RTC</definition>
+        <argsstring>(volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)</argsstring>
+        <name>block_write_RTC</name>
+        <param>
+          <type>volatile unsigned char *</type>
+          <declname>array_ptr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>strt_addr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="26" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="89" bodyend="109" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="26" declcolumn="6"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1a9da8fa7304180559381b120c1e21d47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void block_read_RTC</definition>
+        <argsstring>(volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)</argsstring>
+        <name>block_read_RTC</name>
+        <param>
+          <type>volatile unsigned char *</type>
+          <declname>array_ptr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>strt_addr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="28" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="126" bodyend="150" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="28" declcolumn="6"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8h_1a0f6332c43ada256ba4766ca4a852b010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_read_RTC_test</definition>
+        <argsstring>(void)</argsstring>
+        <name>write_read_RTC_test</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" line="35" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="235" bodyend="245" declfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h" declline="35" declcolumn="6"/>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" compoundref="_d_s1306___r_t_c_drivers_8c" startline="126" endline="150">block_read_RTC</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" compoundref="_d_s1306___r_t_c_drivers_8c" startline="89" endline="109">block_write_RTC</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" compoundref="_d_s1306___r_t_c_drivers_8h" startline="13">CTRL_REG</references>
+        <references refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" compoundref="_d_o_g___l_c_d_8h" startline="19">dsp_buff1</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" compoundref="_d_s1306___r_t_c_drivers_8h" startline="19">RTC_time_date_read</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" compoundref="_d_s1306___r_t_c_drivers_8c" startline="32">RTC_time_date_write</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a0f3652205599fd81f361aeb79dda0cde" compoundref="_d_s1306___r_t_c_drivers_8h" startline="11">RTCRead</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a102032b9f3332eb37d97b86d2b7219b4" compoundref="_d_s1306___r_t_c_drivers_8h" startline="12">RTCWrite</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+        <referencedby refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" compoundref="main_8c" startline="84" endline="97">ISR</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DS1306_RTCDrivers.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Created:<sp/>4/20/2021<sp/>6:44:01<sp/>PM</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>vleen</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DS1306_RTCDRIVERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS1306_RTCDRIVERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_d_s1306___r_t_c_drivers_8h_1a0f3652205599fd81f361aeb79dda0cde" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTCRead<sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_d_s1306___r_t_c_drivers_8h_1a102032b9f3332eb37d97b86d2b7219b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTCWrite<sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG<sp/>0x8F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_d_s1306___r_t_c_drivers_8h_1afc86fba50fc563b62b890a949ef7fcce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1afc86fba50fc563b62b890a949ef7fcce" kindref="member">dsp_buff1</ref>[17];</highlight></codeline>
+<codeline lineno="15" refid="_d_s1306___r_t_c_drivers_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a6279f4f569ceaf2eb9f80b8485949f5d" kindref="member">dsp_buff2</ref>[17];</highlight></codeline>
+<codeline lineno="16" refid="_d_s1306___r_t_c_drivers_8h_1ac5bc895d9c00fb29441604b67fa349e5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1ac5bc895d9c00fb29441604b67fa349e5" kindref="member">dsp_buff3</ref>[17];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" kindref="member">RTC_time_date_read</ref>[7];</highlight></codeline>
+<codeline lineno="20" refid="_d_s1306___r_t_c_drivers_8h_1a3c69305cfd9150111fe7025beb3fc7d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="_d_s1306___r_t_c_drivers_8h_1a3c69305cfd9150111fe7025beb3fc7d9" kindref="member">p</ref>[7];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a09aa76f037a0188e8b754523e0a92557" kindref="member">SPI_rtc_ds1306_config</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_RTC);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1ab9b8e0a9e745786f1e8e58b887d29488" kindref="member">block_write_RTC</ref><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*array_ptr,<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>strt_addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a9da8fa7304180559381b120c1e21d47c" kindref="member">block_read_RTC</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*array_ptr,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>strt_addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_RTC);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a0f6332c43ada256ba4766ca4a852b010" kindref="member">write_read_RTC_test</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DS1306_RTCDRIVERS_H_<sp/>*/</highlight><highlight class="preprocessor">CDRIVERS_H_<sp/>*/</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.h"/>
+  </compounddef>
+</doxygen>

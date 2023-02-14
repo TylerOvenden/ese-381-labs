@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "lab8", "lab8\lab8.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MCP23S17_inout_test", "MCP23S17_inout_test.\MCP23S17_inout_test.cproj", "{91BF05B9-9BB1-44AA-B123-7E5FC679C569}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MCP23S17_inout_interrupt_test", "MCP23S17_inout_interrupt_test\MCP23S17_inout_interrupt_test.cproj", "{716A2BBB-ECE4-43F4-9237-D6053E26E850}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{91BF05B9-9BB1-44AA-B123-7E5FC679C569}.Debug|AVR.ActiveCfg = Debug|AVR
+		{91BF05B9-9BB1-44AA-B123-7E5FC679C569}.Debug|AVR.Build.0 = Debug|AVR
+		{91BF05B9-9BB1-44AA-B123-7E5FC679C569}.Release|AVR.ActiveCfg = Release|AVR
+		{91BF05B9-9BB1-44AA-B123-7E5FC679C569}.Release|AVR.Build.0 = Release|AVR
+		{716A2BBB-ECE4-43F4-9237-D6053E26E850}.Debug|AVR.ActiveCfg = Debug|AVR
+		{716A2BBB-ECE4-43F4-9237-D6053E26E850}.Debug|AVR.Build.0 = Debug|AVR
+		{716A2BBB-ECE4-43F4-9237-D6053E26E850}.Release|AVR.ActiveCfg = Release|AVR
+		{716A2BBB-ECE4-43F4-9237-D6053E26E850}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

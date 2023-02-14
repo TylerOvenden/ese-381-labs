@@ -1,0 +1,158 @@
+\hypertarget{_d_s1306___r_t_c_drivers_8c}{}\doxysection{C\+:/\+Users/vleen/\+Documents/\+Atmel Studio/7.0/display\+\_\+time\+\_\+temp/display\+\_\+time\+\_\+temp/\+DS1306\+\_\+\+RTCDrivers.c File Reference}
+\label{_d_s1306___r_t_c_drivers_8c}\index{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/DS1306\_RTCDrivers.c@{C:/Users/vleen/Documents/Atmel Studio/7.0/display\_time\_temp/display\_time\_temp/DS1306\_RTCDrivers.c}}
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}DS1306\+\_\+\+RTCDrivers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DOG\+\_\+\+LCD.\+h\char`\"{}}\newline
+Include dependency graph for DS1306\+\_\+\+RTCDrivers.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_s1306___r_t_c_drivers_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~4000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_a09aa76f037a0188e8b754523e0a92557}{SPI\+\_\+rtc\+\_\+ds1306\+\_\+config}} (void)
+\item 
+void \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_ab9b8e0a9e745786f1e8e58b887d29488}{block\+\_\+write\+\_\+\+RTC}} (volatile unsigned char $\ast$array\+\_\+ptr, unsigned char strt\+\_\+addr, unsigned char count)
+\item 
+void \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_a9da8fa7304180559381b120c1e21d47c}{block\+\_\+read\+\_\+\+RTC}} (volatile unsigned char $\ast$array\+\_\+ptr, unsigned char strt\+\_\+addr, unsigned char count)
+\item 
+void \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_a12ebcc19faf4ec1539ab9210ef56c04d}{write\+\_\+\+RTC}} (unsigned char reg\+\_\+\+RTC, unsigned char data\+\_\+\+RTC)
+\item 
+unsigned char \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_a60a3d2d74834a30436281bd530a04553}{read\+\_\+\+RTC}} (unsigned char reg\+\_\+\+RTC)
+\item 
+void \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_ae4e012a5b246a8944e4e4336c72a7e7d}{write\+\_\+read\+\_\+\+RTC\+\_\+test}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile unsigned char \mbox{\hyperlink{_d_s1306___r_t_c_drivers_8c_ac91a984343034525fd2e2d652df23d66}{RTC\+\_\+time\+\_\+date\+\_\+write}} \mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_d_s1306___r_t_c_drivers_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~4000000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_a9da8fa7304180559381b120c1e21d47c}\label{_d_s1306___r_t_c_drivers_8c_a9da8fa7304180559381b120c1e21d47c}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!block\_read\_RTC@{block\_read\_RTC}}
+\index{block\_read\_RTC@{block\_read\_RTC}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{block\_read\_RTC()}{block\_read\_RTC()}}
+{\footnotesize\ttfamily void block\+\_\+read\+\_\+\+RTC (\begin{DoxyParamCaption}\item[{volatile unsigned char $\ast$}]{array\+\_\+ptr,  }\item[{unsigned char}]{strt\+\_\+addr,  }\item[{unsigned char}]{count }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_s1306___r_t_c_drivers_8c_a9da8fa7304180559381b120c1e21d47c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_ab9b8e0a9e745786f1e8e58b887d29488}\label{_d_s1306___r_t_c_drivers_8c_ab9b8e0a9e745786f1e8e58b887d29488}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!block\_write\_RTC@{block\_write\_RTC}}
+\index{block\_write\_RTC@{block\_write\_RTC}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{block\_write\_RTC()}{block\_write\_RTC()}}
+{\footnotesize\ttfamily void block\+\_\+write\+\_\+\+RTC (\begin{DoxyParamCaption}\item[{volatile unsigned char $\ast$}]{array\+\_\+ptr,  }\item[{unsigned char}]{strt\+\_\+addr,  }\item[{unsigned char}]{count }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_s1306___r_t_c_drivers_8c_ab9b8e0a9e745786f1e8e58b887d29488_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_a60a3d2d74834a30436281bd530a04553}\label{_d_s1306___r_t_c_drivers_8c_a60a3d2d74834a30436281bd530a04553}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!read\_RTC@{read\_RTC}}
+\index{read\_RTC@{read\_RTC}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{read\_RTC()}{read\_RTC()}}
+{\footnotesize\ttfamily unsigned char read\+\_\+\+RTC (\begin{DoxyParamCaption}\item[{unsigned char}]{reg\+\_\+\+RTC }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{_d_s1306___r_t_c_drivers_8c_a60a3d2d74834a30436281bd530a04553_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_a09aa76f037a0188e8b754523e0a92557}\label{_d_s1306___r_t_c_drivers_8c_a09aa76f037a0188e8b754523e0a92557}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!SPI\_rtc\_ds1306\_config@{SPI\_rtc\_ds1306\_config}}
+\index{SPI\_rtc\_ds1306\_config@{SPI\_rtc\_ds1306\_config}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{SPI\_rtc\_ds1306\_config()}{SPI\_rtc\_ds1306\_config()}}
+{\footnotesize\ttfamily void SPI\+\_\+rtc\+\_\+ds1306\+\_\+config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{_d_s1306___r_t_c_drivers_8c_a09aa76f037a0188e8b754523e0a92557_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_ae4e012a5b246a8944e4e4336c72a7e7d}\label{_d_s1306___r_t_c_drivers_8c_ae4e012a5b246a8944e4e4336c72a7e7d}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!write\_read\_RTC\_test@{write\_read\_RTC\_test}}
+\index{write\_read\_RTC\_test@{write\_read\_RTC\_test}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{write\_read\_RTC\_test()}{write\_read\_RTC\_test()}}
+{\footnotesize\ttfamily void write\+\_\+read\+\_\+\+RTC\+\_\+test (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_d_s1306___r_t_c_drivers_8c_ae4e012a5b246a8944e4e4336c72a7e7d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_d_s1306___r_t_c_drivers_8c_ae4e012a5b246a8944e4e4336c72a7e7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_a12ebcc19faf4ec1539ab9210ef56c04d}\label{_d_s1306___r_t_c_drivers_8c_a12ebcc19faf4ec1539ab9210ef56c04d}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!write\_RTC@{write\_RTC}}
+\index{write\_RTC@{write\_RTC}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{write\_RTC()}{write\_RTC()}}
+{\footnotesize\ttfamily void write\+\_\+\+RTC (\begin{DoxyParamCaption}\item[{unsigned char}]{reg\+\_\+\+RTC,  }\item[{unsigned char}]{data\+\_\+\+RTC }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_s1306___r_t_c_drivers_8c_a12ebcc19faf4ec1539ab9210ef56c04d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_d_s1306___r_t_c_drivers_8c_ac91a984343034525fd2e2d652df23d66}\label{_d_s1306___r_t_c_drivers_8c_ac91a984343034525fd2e2d652df23d66}} 
+\index{DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}!RTC\_time\_date\_write@{RTC\_time\_date\_write}}
+\index{RTC\_time\_date\_write@{RTC\_time\_date\_write}!DS1306\_RTCDrivers.c@{DS1306\_RTCDrivers.c}}
+\doxysubsubsection{\texorpdfstring{RTC\_time\_date\_write}{RTC\_time\_date\_write}}
+{\footnotesize\ttfamily volatile unsigned char RTC\+\_\+time\+\_\+date\+\_\+write\mbox{[}7\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ 0x00, 0x00, 0x00, 0x00, 0x00,}
+\DoxyCodeLine{0x00, 0x00 \}}
+
+\end{DoxyCode}

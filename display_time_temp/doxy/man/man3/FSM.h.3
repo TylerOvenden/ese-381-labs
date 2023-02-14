@@ -1,0 +1,203 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h" 3 "Wed Apr 28 2021" "Version 1.0" "Lab 12: Data Logger" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBtransition\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBREAD_HOUR\fP   0x00"
+.br
+.ti -1c
+.RI "#define \fBREAD_MIN\fP   0x10"
+.br
+.ti -1c
+.RI "#define \fBREAD_SEC\fP   0x20"
+.br
+.ti -1c
+.RI "#define \fBWRITE_HOUR\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBWRITE_MIN\fP   0x80"
+.br
+.ti -1c
+.RI "#define \fBWRITE_SEC\fP   0x80"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void(* \fBtask_fn_ptr\fP) ()"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBstate\fP { \fBidle\fP, \fBset\fP, \fBhours\fP, \fBmins\fP, \fBsecs\fP }"
+.br
+.ti -1c
+.RI "enum \fBkey\fP { \fBs\fP, \fBh\fP, \fBm\fP, \fBsec\fP, \fBdigit\fP, \fBenter\fP, \fBeol\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBfsm\fP (\fBstate\fP ps, \fBkey\fP kevval)"
+.br
+.ti -1c
+.RI "void \fBshiftArray\fP (int arr[], int num)"
+.br
+.ti -1c
+.RI "void \fBset_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBerror_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_hours_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_mins_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_sec_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBdigit_in_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_hour_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_min_fn\fP ()"
+.br
+.ti -1c
+.RI "void \fBenter_sec_fn\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBvals\fP [2]"
+.br
+.ti -1c
+.RI "int \fBcurrent\fP"
+.br
+.ti -1c
+.RI "int \fBdigit_val\fP"
+.br
+.ti -1c
+.RI "\fBstate\fP \fBpresent_state\fP"
+.br
+.ti -1c
+.RI "volatile unsigned char \fBread\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define READ_HOUR   0x00"
+
+.SS "#define READ_MIN   0x10"
+
+.SS "#define READ_SEC   0x20"
+
+.SS "#define WRITE_HOUR   0x80"
+
+.SS "#define WRITE_MIN   0x80"
+
+.SS "#define WRITE_SEC   0x80"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void(* task_fn_ptr) ()"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBkey\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIs \fP\fP
+.TP
+\fB\fIh \fP\fP
+.TP
+\fB\fIm \fP\fP
+.TP
+\fB\fIsec \fP\fP
+.TP
+\fB\fIdigit \fP\fP
+.TP
+\fB\fIenter \fP\fP
+.TP
+\fB\fIeol \fP\fP
+.SS "enum \fBstate\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIidle \fP\fP
+.TP
+\fB\fIset \fP\fP
+.TP
+\fB\fIhours \fP\fP
+.TP
+\fB\fImins \fP\fP
+.TP
+\fB\fIsecs \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "void digit_in_fn ()"
+
+.SS "void enter_hour_fn ()"
+
+.SS "void enter_min_fn ()"
+
+.SS "void enter_sec_fn ()"
+
+.SS "void error_fn ()"
+
+.SS "void fsm (\fBstate\fP ps, \fBkey\fP kevval)"
+
+.SS "void set_fn ()"
+
+.SS "void set_hours_fn ()"
+
+.SS "void set_mins_fn ()"
+
+.SS "void set_sec_fn ()"
+
+.SS "void shiftArray (int arr[], int num)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "int current"
+
+.SS "int digit_val"
+
+.SS "\fBstate\fP present_state"
+
+.SS "volatile unsigned char read"
+
+.SS "int vals[2]"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 12: Data Logger from the source code\&.

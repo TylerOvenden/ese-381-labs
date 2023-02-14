@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_f_s_m_8c" kind="file" language="C++">
+    <compoundname>FSM.c</compoundname>
+    <includes local="no">avr/io.h</includes>
+    <includes refid="_f_s_m_8h" local="yes">FSM.h</includes>
+    <includes refid="_d_s1306___r_t_c_drivers_8h" local="yes">DS1306_RTCDrivers.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>DS1306_RTCDrivers.h</label>
+        <link refid="_d_s1306___r_t_c_drivers_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c</label>
+        <link refid="_f_s_m_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FSM.h</label>
+        <link refid="_f_s_m_8h"/>
+      </node>
+      <node id="2">
+        <label>avr/io.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_f_s_m_8c_1a8dfc733fede7ddfb16aaa2d28084df3e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref></type>
+        <definition>const transition idle_transitions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>idle_transitions</name>
+        <initializer>= {
+		
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,        <ref refid="_f_s_m_8h_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,     <ref refid="_f_s_m_8h_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="31" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_f_s_m_8c_1aae3300fcda9b10c11373aae3eea239f2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref></type>
+        <definition>const transition set_transitions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>set_transitions</name>
+        <initializer>= {
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a83684c9789c44b5b6edca6ae4ae1eeb5" kindref="member">h</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28" kindref="member">hours</ref>,        <ref refid="_f_s_m_8h_1a8686e989bce0c071908b703db39fa19d" kindref="member">set_hours_fn</ref>},
+	
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aca3cf2ca9e0e7f4e96f2bbc362b9353a" kindref="member">m</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f" kindref="member">mins</ref>,        <ref refid="_f_s_m_8h_1ad3345dd52ffb075d4981803b1f00b686" kindref="member">set_mins_fn</ref>},
+	
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" kindref="member">sec</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a8bacf0f7f796c293c657fb73583dc955" kindref="member">secs</ref>,        <ref refid="_f_s_m_8h_1a115da05e50f9993fdd747d4c4d2561b5" kindref="member">set_sec_fn</ref>},		
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,     <ref refid="_f_s_m_8h_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="40" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_f_s_m_8c_1a88554df5e8785b151791d00499b7b468" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref></type>
+        <definition>const transition hours_transitions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>hours_transitions</name>
+        <initializer>= {
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28" kindref="member">hours</ref>,      <ref refid="_f_s_m_8h_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},
+	
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,        <ref refid="_f_s_m_8h_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,    <ref refid="_f_s_m_8h_1ac745ae9602ee76e68746022ba3a9ea85" kindref="member">enter_hour_fn</ref>	},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,     <ref refid="_f_s_m_8h_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}		
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="53" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_f_s_m_8c_1a7dbad8f590fd127f9db582d8001ec1fa" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref></type>
+        <definition>const transition minutes_transitions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>minutes_transitions</name>
+        <initializer>= {
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f" kindref="member">mins</ref>,      <ref refid="_f_s_m_8h_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,        <ref refid="_f_s_m_8h_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,    <ref refid="_f_s_m_8h_1ab83f03132f6a40660d620d6a0733e2fa" kindref="member">enter_min_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,     <ref refid="_f_s_m_8h_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="66" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_f_s_m_8c_1aef23d2a5cff41b4abf030b9b59aca49a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref></type>
+        <definition>const transition seconds_transitions[]</definition>
+        <argsstring>[]</argsstring>
+        <name>seconds_transitions</name>
+        <initializer>= {
+				
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,    <ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" kindref="member">sec</ref>,      <ref refid="_f_s_m_8h_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},
+	
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,    <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,        <ref refid="_f_s_m_8h_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,    <ref refid="_f_s_m_8h_1af8d0bc41465d7f04223aae3427484350" kindref="member">enter_sec_fn</ref>},
+		
+		{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,   <ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,     <ref refid="_f_s_m_8h_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="78" column="18" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtransition" kindref="compound">transition</ref> *</type>
+        <definition>const transition* ps_transition_ptr[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>ps_transition_ptr</name>
+        <initializer>=
+
+	{<ref refid="_f_s_m_8c_1a8dfc733fede7ddfb16aaa2d28084df3e" kindref="member">idle_transitions</ref>,
+		<ref refid="_f_s_m_8c_1aae3300fcda9b10c11373aae3eea239f2" kindref="member">set_transitions</ref>,
+		<ref refid="_f_s_m_8c_1a88554df5e8785b151791d00499b7b468" kindref="member">hours_transitions</ref>,
+		<ref refid="_f_s_m_8c_1a7dbad8f590fd127f9db582d8001ec1fa" kindref="member">minutes_transitions</ref>,
+		<ref refid="_f_s_m_8c_1aef23d2a5cff41b4abf030b9b59aca49a" kindref="member">seconds_transitions</ref>
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="90" column="19" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="90" bodyend="-1"/>
+        <referencedby refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" compoundref="_f_s_m_8c" startline="104" endline="128">fsm</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fsm</definition>
+        <argsstring>(state ps, key keyval)</argsstring>
+        <name>fsm</name>
+        <param>
+          <type><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref></type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544" kindref="member">key</ref></type>
+          <declname>keyval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="104" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="104" bodyend="128"/>
+        <references refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" compoundref="_f_s_m_8h" startline="25">eol</references>
+        <references refid="structtransition_1a58be31cfbf428c5b0b9aded534ae53df" compoundref="_f_s_m_8h" startline="33">transition::keyval</references>
+        <references refid="structtransition_1a7f5232145915a376a84819ea2d456320" compoundref="_f_s_m_8h" startline="34">transition::next_state</references>
+        <references refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" compoundref="_f_s_m_8h" startline="26">present_state</references>
+        <references refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" compoundref="_f_s_m_8c" startline="90">ps_transition_ptr</references>
+        <references refid="structtransition_1a71b609409199de29f533e4adb73c4a72" compoundref="_f_s_m_8h" startline="35">transition::tf_ptr</references>
+        <referencedby refid="main_8c_1a1f11fdfd6a878a854419434a4a401693" compoundref="main_8c" startline="118" endline="145">ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_fn</definition>
+        <argsstring>()</argsstring>
+        <name>set_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="129" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="129" bodyend="133"/>
+        <references refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" compoundref="_f_s_m_8h" startline="21">vals</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void error_fn</definition>
+        <argsstring>()</argsstring>
+        <name>error_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="134" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_hours_fn</definition>
+        <argsstring>()</argsstring>
+        <name>set_hours_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="140" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="140" bodyend="144"/>
+        <references refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" compoundref="_f_s_m_8h" startline="30">read</references>
+        <references refid="_f_s_m_8h_1aecaea7cf242bf594c8dd805ff603b202" compoundref="_f_s_m_8h" startline="12">READ_HOUR</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" compoundref="_d_s1306___r_t_c_drivers_8c" startline="195" endline="217">read_RTC</references>
+        <references refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" compoundref="_u_s_a_r_t3_8c" startline="64" endline="78">transmit_USART</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_mins_fn</definition>
+        <argsstring>()</argsstring>
+        <name>set_mins_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="145" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="145" bodyend="150"/>
+        <references refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" compoundref="_f_s_m_8h" startline="30">read</references>
+        <references refid="_f_s_m_8h_1a97c538b090177a91e5118f4377a064bc" compoundref="_f_s_m_8h" startline="13">READ_MIN</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" compoundref="_d_s1306___r_t_c_drivers_8c" startline="195" endline="217">read_RTC</references>
+        <references refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" compoundref="_u_s_a_r_t3_8c" startline="64" endline="78">transmit_USART</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_sec_fn</definition>
+        <argsstring>()</argsstring>
+        <name>set_sec_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="151" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="151" bodyend="154"/>
+        <references refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" compoundref="_f_s_m_8h" startline="30">read</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" compoundref="_d_s1306___r_t_c_drivers_8c" startline="195" endline="217">read_RTC</references>
+        <references refid="_f_s_m_8h_1a0e5ad3e836fe5812afdc8ebb9054aed8" compoundref="_f_s_m_8h" startline="14">READ_SEC</references>
+        <references refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" compoundref="_u_s_a_r_t3_8c" startline="64" endline="78">transmit_USART</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void digit_in_fn</definition>
+        <argsstring>()</argsstring>
+        <name>digit_in_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="157" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="157" bodyend="161"/>
+        <references refid="_f_s_m_8h_1a8dcc1826427b09265c8466bfb477d2ff" compoundref="_f_s_m_8h" startline="23">digit_val</references>
+        <references refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" compoundref="_f_s_m_8h" startline="21">vals</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enter_hour_fn</definition>
+        <argsstring>()</argsstring>
+        <name>enter_hour_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="165" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="165" bodyend="174"/>
+        <references refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" compoundref="_f_s_m_8h" startline="21">vals</references>
+        <references refid="_f_s_m_8h_1afe8cbacf9f8d77ecca923ac30376136d" compoundref="_f_s_m_8h" startline="15">WRITE_HOUR</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enter_min_fn</definition>
+        <argsstring>()</argsstring>
+        <name>enter_min_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="175" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="175" bodyend="183"/>
+        <references refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" compoundref="_f_s_m_8h" startline="21">vals</references>
+        <references refid="_f_s_m_8h_1a1e04d2115c0f3e7f913d96cb4ff28512" compoundref="_f_s_m_8h" startline="16">WRITE_MIN</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+      </memberdef>
+      <memberdef kind="function" id="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enter_sec_fn</definition>
+        <argsstring>()</argsstring>
+        <name>enter_sec_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" line="184" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c" bodystart="184" bodyend="193"/>
+        <references refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" compoundref="_f_s_m_8h" startline="21">vals</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+        <references refid="_f_s_m_8h_1a29670cb1a661076e7584b0db9710c7fa" compoundref="_f_s_m_8h" startline="17">WRITE_SEC</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>FSM.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Title<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>4/27/2021</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Tyler<sp/>Ovenden<sp/>112122685</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION:<sp/><sp/>contains<sp/>all<sp/>functions<sp/>for<sp/>working<sp/>with<sp/>the<sp/>FSM<sp/>as<sp/>well<sp/>as<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//subtables.<sp/>fsm()<sp/>method<sp/>determines<sp/>based<sp/>on<sp/>the<sp/>user&apos;s<sp/>input<sp/>what<sp/>is<sp/>called<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//next<sp/>in<sp/>the<sp/>fsm<sp/>&amp;<sp/>which<sp/>methods<sp/>are<sp/>called.<sp/>these<sp/>methods<sp/>write<sp/>to<sp/>array<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//tracking<sp/>entered<sp/>digits,<sp/>setting<sp/>either<sp/>hours,<sp/>minutes<sp/>or<sp/>seconds<sp/>to<sp/>what<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>was<sp/>set<sp/>&amp;<sp/>echoes<sp/>back<sp/>hours,<sp/>minutes<sp/>or<sp/>seconds.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>utilizes<sp/>previously<sp/>made<sp/>methods<sp/>for<sp/>reading<sp/>the<sp/>DS1306<sp/>&amp;<sp/>using<sp/>USART3.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Warnings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restrictions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algorithms<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>References<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>History<sp/><sp/><sp/><sp/><sp/>:<sp/>Initial<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_s_m_8h" kindref="compound">FSM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_s1306___r_t_c_drivers_8h" kindref="compound">DS1306_RTCDrivers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//idle<sp/>state<sp/>subtable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_f_s_m_8c_1a8dfc733fede7ddfb16aaa2d28084df3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/><ref refid="_f_s_m_8c_1a8dfc733fede7ddfb16aaa2d28084df3e" kindref="member">idle_transitions</ref>[]=<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT<sp/>,<sp/>NEXT_STATE,<sp/>TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}<sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//set<sp/>state<sp/>subtable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_f_s_m_8c_1aae3300fcda9b10c11373aae3eea239f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/><ref refid="_f_s_m_8c_1aae3300fcda9b10c11373aae3eea239f2" kindref="member">set_transitions</ref>[]=<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT<sp/>,<sp/>NEXT_STATE,<sp/>TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a83684c9789c44b5b6edca6ae4ae1eeb5" kindref="member">h</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28" kindref="member">hours</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" kindref="member">set_hours_fn</ref>},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aca3cf2ca9e0e7f4e96f2bbc362b9353a" kindref="member">m</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f" kindref="member">mins</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" kindref="member">set_mins_fn</ref>},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" kindref="member">sec</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a8bacf0f7f796c293c657fb73583dc955" kindref="member">secs</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" kindref="member">set_sec_fn</ref>},<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//hours<sp/>state<sp/>subtable<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_f_s_m_8c_1a88554df5e8785b151791d00499b7b468" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/><ref refid="_f_s_m_8c_1a88554df5e8785b151791d00499b7b468" kindref="member">hours_transitions</ref>[]=<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT<sp/>,<sp/>NEXT_STATE,<sp/>TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a769ea7f63d9d5def80de898a3a10da28" kindref="member">hours</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" kindref="member">enter_hour_fn</ref><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//minutes<sp/>state<sp/>subtable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_f_s_m_8c_1a7dbad8f590fd127f9db582d8001ec1fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/><ref refid="_f_s_m_8c_1a7dbad8f590fd127f9db582d8001ec1fa" kindref="member">minutes_transitions</ref>[]=<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT<sp/>,<sp/><sp/>NEXT_STATE,<sp/><sp/><sp/><sp/>TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a5664ce9982aac908cba4cc643f89b42f" kindref="member">mins</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" kindref="member">enter_min_fn</ref>},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//seconds<sp/>state<sp/>subtable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_f_s_m_8c_1aef23d2a5cff41b4abf030b9b59aca49a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/><ref refid="_f_s_m_8c_1aef23d2a5cff41b4abf030b9b59aca49a" kindref="member">seconds_transitions</ref>[]=<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT<sp/>,<sp/>NEXT_STATE,<sp/>TASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a778a9aa87eab1d8dc1cfd7ba5e39c98d" kindref="member">digit</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a535d1ff525b138eddb849d8a91e981cb" kindref="member">sec</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>},</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544aa8e9307350b1e20521f37dfe5268df55" kindref="member">s</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a197d54b51efb9c5c39137595485211b4" kindref="member">set</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>},</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544abea5d16ce3298e5fa4b7059ae4ea765b" kindref="member">enter</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" kindref="member">enter_sec_fn</ref>},</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>,<sp/><sp/><sp/><ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90a0e9a37114c0e458d28d52f06ec0f2242" kindref="member">idle</ref>,<sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>}<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//pointer<sp/>of<sp/>all<sp/>the<sp/>subtables<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtransition" kindref="compound">transition</ref><sp/>*<sp/><ref refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" kindref="member">ps_transition_ptr</ref>[5]=</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="_f_s_m_8c_1a8dfc733fede7ddfb16aaa2d28084df3e" kindref="member">idle_transitions</ref>,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1aae3300fcda9b10c11373aae3eea239f2" kindref="member">set_transitions</ref>,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a88554df5e8785b151791d00499b7b468" kindref="member">hours_transitions</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a7dbad8f590fd127f9db582d8001ec1fa" kindref="member">minutes_transitions</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1aef23d2a5cff41b4abf030b9b59aca49a" kindref="member">seconds_transitions</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>finite<sp/>state<sp/>machine<sp/>is<sp/>implemented<sp/>as<sp/>a<sp/>fumction<sp/>with<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>corresponding<sp/>to<sp/>the<sp/>present<sp/>state<sp/>and<sp/>key<sp/>value<sp/>that<sp/>has<sp/>been<sp/>input.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1af9399b68e34fa19e2e34bd5421adea7f" kindref="member">fsm</ref><sp/>(<ref refid="_f_s_m_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref><sp/>ps,<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544" kindref="member">key</ref><sp/>keyval)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Search<sp/>the<sp/>array<sp/>of<sp/>transition<sp/>structures<sp/>corresponding<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>present<sp/>state<sp/>for<sp/>the<sp/>transition<sp/>structure<sp/>that<sp/>has<sp/>has<sp/>keyvalue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>field<sp/>value<sp/>that<sp/>is<sp/>equal<sp/>to<sp/>current<sp/>input<sp/>key<sp/>value<sp/>or<sp/>equal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>eol.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>(<ref refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" kindref="member">ps_transition_ptr</ref>[ps][i].<ref refid="structtransition_1a58be31cfbf428c5b0b9aded534ae53df" kindref="member">keyval</ref><sp/>!=<sp/>keyval)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(<ref refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" kindref="member">ps_transition_ptr</ref>[ps][i].keyval<sp/>!=<sp/><ref refid="_f_s_m_8h_1ab0d96f9d852c2058c2546a1338e87544a441cf6c79172538fcc82d476a881cf9d" kindref="member">eol</ref>);<sp/>i++);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i<sp/>now<sp/>has<sp/>the<sp/>value<sp/>of<sp/>the<sp/>index<sp/>of<sp/>the<sp/>transition<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>corresponding<sp/>to<sp/>the<sp/>current<sp/>intput<sp/>key<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Invoke<sp/>the<sp/>task<sp/>function<sp/>pointed<sp/>to<sp/>by<sp/>the<sp/>task<sp/>function<sp/>pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>the<sp/>current<sp/>transition<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" kindref="member">ps_transition_ptr</ref>[ps][i].<ref refid="structtransition_1a71b609409199de29f533e4adb73c4a72" kindref="member">tf_ptr</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>present<sp/>state<sp/>equal<sp/>to<sp/>the<sp/>next<sp/>state<sp/>value<sp/>of<sp/>the<sp/>current</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transition<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1ab3449c3dbbaae40300b72fc71fd82726" kindref="member">present_state</ref><sp/>=<sp/><ref refid="_f_s_m_8c_1a3ecdd90e8c7f4673dfef5a27058aee86" kindref="member">ps_transition_ptr</ref>[ps][i].<ref refid="structtransition_1a7f5232145915a376a84819ea2d456320" kindref="member">next_state</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1ab68e0acd6a7568f8d1162f96772099f7" kindref="member">set_fn</ref>(){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//clears<sp/>value<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134" refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1a5fab541132b169559a396bfa60911365" kindref="member">error_fn</ref>(){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//following<sp/>methods<sp/>read<sp/>back<sp/>the<sp/>hours,<sp/>mins<sp/>&amp;<sp/>secs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//using<sp/>USART</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" kindref="member">set_hours_fn</ref>(){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref><sp/>=<sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref>(<ref refid="_f_s_m_8h_1aecaea7cf242bf594c8dd805ff603b202" kindref="member">READ_HOUR</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" kindref="member">transmit_USART</ref>(<ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145" refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" kindref="member">set_mins_fn</ref>(){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref><sp/>=<sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref>(<ref refid="_f_s_m_8h_1a97c538b090177a91e5118f4377a064bc" kindref="member">READ_MIN</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" kindref="member">transmit_USART</ref>(<ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151" refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" kindref="member">set_sec_fn</ref>(){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref><sp/>=<sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref>(<ref refid="_f_s_m_8h_1a0e5ad3e836fe5812afdc8ebb9054aed8" kindref="member">READ_SEC</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t3_8c_1ae467ad144c65dfe4180ba3f419734ea3" kindref="member">transmit_USART</ref>(<ref refid="_f_s_m_8h_1a59199313e40e46b6429cb2d311e35539" kindref="member">read</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//enters<sp/>last<sp/>entered<sp/>digit<sp/>to<sp/>digits<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1ac3e2dc1cc0527fcf05a4f6f0b89c3750" kindref="member">digit_in_fn</ref>(){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//shifts<sp/>one<sp/>result<sp/>down,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[0]<sp/>=<sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[1];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[1]<sp/>=<sp/><ref refid="_f_s_m_8h_1a8dcc1826427b09265c8466bfb477d2ff" kindref="member">digit_val</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//following<sp/>3<sp/>methods<sp/>set<sp/>the<sp/>hours,<sp/>mins<sp/>or<sp/>secs<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//by<sp/>using<sp/>the<sp/>write_rtc<sp/>method<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" kindref="member">enter_hour_fn</ref>(){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//converts<sp/>arr<sp/>to<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>k<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>10<sp/>*<sp/>k<sp/>+<sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[i];</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref>(<ref refid="_f_s_m_8h_1afe8cbacf9f8d77ecca923ac30376136d" kindref="member">WRITE_HOUR</ref>,<sp/>k);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175" refid="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" kindref="member">enter_min_fn</ref>(){</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//converts<sp/>arr<sp/>to<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>k<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>10<sp/>*<sp/>k<sp/>+<sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[i];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref>(<ref refid="_f_s_m_8h_1a1e04d2115c0f3e7f913d96cb4ff28512" kindref="member">WRITE_MIN</ref>,<sp/>k);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184" refid="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" kindref="member">enter_sec_fn</ref>(){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//converts<sp/>arr<sp/>to<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>k<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>10<sp/>*<sp/>k<sp/>+<sp/><ref refid="_f_s_m_8h_1a5141b1eb85fd1fffa2ad8306a00a8ffa" kindref="member">vals</ref>[i];</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref>(<ref refid="_f_s_m_8h_1a29670cb1a661076e7584b0db9710c7fa" kindref="member">WRITE_SEC</ref>,<sp/>k);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/FSM.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+.TH "C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h" 3 "Wed Apr 14 2021" "Version 1.0" "Temperature Measurement Multi Module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/vleen/Documents/Atmel Studio/7.0/lab10/testproject/ADC.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRES12_Bm\fP   0x00"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdate_lcd_dog\fP (void)"
+.br
+.ti -1c
+.RI "void \fBconvert\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdisplayVolt\fP (uint16_t r)"
+.br
+.ti -1c
+.RI "uint32_t \fBconvertToBCD\fP (uint16_t dec)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBtempHex\fP [3]"
+.br
+.ti -1c
+.RI "volatile uint16_t \fBresult\fP"
+.br
+.ti -1c
+.RI "volatile uint8_t \fBtemp\fP"
+.br
+.ti -1c
+.RI "volatile int \fBboolean\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RES12_Bm   0x00"
+
+.PP
+Definition at line 12 of file ADC\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void convert (void)"
+
+.PP
+Definition at line 82 of file ADC\&.c\&.
+.SS "uint32_t convertToBCD (uint16_t dec)"
+
+.PP
+Definition at line 174 of file ADC\&.c\&.
+.SS "void displayVolt (uint16_t r)"
+
+.PP
+Definition at line 136 of file ADC\&.c\&.
+.SS "void update_lcd_dog (void)"
+
+.PP
+Definition at line 221 of file DOG_LCD\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "volatile int boolean"
+
+.PP
+Definition at line 23 of file ADC\&.h\&.
+.SS "volatile uint16_t result"
+
+.PP
+Definition at line 21 of file ADC\&.h\&.
+.SS "volatile uint8_t temp"
+
+.PP
+Definition at line 22 of file ADC\&.h\&.
+.SS "char tempHex[3]"
+
+.PP
+Definition at line 20 of file ADC\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Temperature Measurement Multi Module from the source code\&.

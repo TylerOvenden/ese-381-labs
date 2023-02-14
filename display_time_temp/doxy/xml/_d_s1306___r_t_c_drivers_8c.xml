@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_d_s1306___r_t_c_drivers_8c" kind="file" language="C++">
+    <compoundname>DS1306_RTCDrivers.c</compoundname>
+    <includes local="no">util/delay.h</includes>
+    <includes local="no">avr/io.h</includes>
+    <includes refid="_d_s1306___r_t_c_drivers_8h" local="yes">DS1306_RTCDrivers.h</includes>
+    <includes refid="_d_o_g___l_c_d_8h" local="yes">DOG_LCD.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c</label>
+        <link refid="_d_s1306___r_t_c_drivers_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DS1306_RTCDrivers.h</label>
+        <link refid="_d_s1306___r_t_c_drivers_8h"/>
+      </node>
+      <node id="3">
+        <label>avr/io.h</label>
+      </node>
+      <node id="2">
+        <label>util/delay.h</label>
+      </node>
+      <node id="5">
+        <label>DOG_LCD.h</label>
+        <link refid="_d_o_g___l_c_d_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_d_s1306___r_t_c_drivers_8c_1a43bafb28b29491ec7f871319b5a3b2f8" prot="public" static="no">
+        <name>F_CPU</name>
+        <initializer>4000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="25" column="9" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>volatile unsigned char RTC_time_date_write[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>RTC_time_date_write</name>
+        <initializer>= { 0x00, 0x00, 0x00, 0x00, 0x00,
+0x00, 0x00 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="32" column="24" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="32" bodyend="-1"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1a09aa76f037a0188e8b754523e0a92557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SPI_rtc_ds1306_config</definition>
+        <argsstring>(void)</argsstring>
+        <name>SPI_rtc_ds1306_config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="48" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="48" bodyend="70"/>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="41" endline="61">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void block_write_RTC</definition>
+        <argsstring>(volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)</argsstring>
+        <name>block_write_RTC</name>
+        <param>
+          <type>volatile unsigned char *</type>
+          <declname>array_ptr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>strt_addr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="89" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="89" bodyend="109"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void block_read_RTC</definition>
+        <argsstring>(volatile unsigned char *array_ptr, unsigned char strt_addr, unsigned char count)</argsstring>
+        <name>block_read_RTC</name>
+        <param>
+          <type>volatile unsigned char *</type>
+          <declname>array_ptr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>strt_addr</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="126" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="126" bodyend="150"/>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_RTC</definition>
+        <argsstring>(unsigned char reg_RTC, unsigned char data_RTC)</argsstring>
+        <name>write_RTC</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>reg_RTC</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>data_RTC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="168" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="168" bodyend="182"/>
+        <referencedby refid="_f_s_m_8c_1ac745ae9602ee76e68746022ba3a9ea85" compoundref="_f_s_m_8c" startline="165" endline="174">enter_hour_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1ab83f03132f6a40660d620d6a0733e2fa" compoundref="_f_s_m_8c" startline="175" endline="183">enter_min_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1af8d0bc41465d7f04223aae3427484350" compoundref="_f_s_m_8c" startline="184" endline="193">enter_sec_fn</referencedby>
+        <referencedby refid="main_8c_1ae1e113ca637d2af28b22659464940e53" compoundref="main_8c" startline="146" endline="154">initInterupt</referencedby>
+        <referencedby refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="235" endline="245">write_read_RTC_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char read_RTC</definition>
+        <argsstring>(unsigned char reg_RTC)</argsstring>
+        <name>read_RTC</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>reg_RTC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="195" column="15" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="195" bodyend="217"/>
+        <references refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" compoundref="_a_d_c_8h" startline="21">temp</references>
+        <referencedby refid="_f_s_m_8c_1a8686e989bce0c071908b703db39fa19d" compoundref="_f_s_m_8c" startline="140" endline="144">set_hours_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1ad3345dd52ffb075d4981803b1f00b686" compoundref="_f_s_m_8c" startline="145" endline="150">set_mins_fn</referencedby>
+        <referencedby refid="_f_s_m_8c_1a115da05e50f9993fdd747d4c4d2561b5" compoundref="_f_s_m_8c" startline="151" endline="154">set_sec_fn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_read_RTC_test</definition>
+        <argsstring>()</argsstring>
+        <name>write_read_RTC_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" line="235" column="6" bodyfile="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c" bodystart="235" bodyend="245"/>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" compoundref="_d_s1306___r_t_c_drivers_8c" startline="126" endline="150">block_read_RTC</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" compoundref="_d_s1306___r_t_c_drivers_8c" startline="89" endline="109">block_write_RTC</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" compoundref="_d_s1306___r_t_c_drivers_8h" startline="13">CTRL_REG</references>
+        <references refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" compoundref="_d_o_g___l_c_d_8h" startline="19">dsp_buff1</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" compoundref="_d_s1306___r_t_c_drivers_8h" startline="19">RTC_time_date_read</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" compoundref="_d_s1306___r_t_c_drivers_8c" startline="32">RTC_time_date_write</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a0f3652205599fd81f361aeb79dda0cde" compoundref="_d_s1306___r_t_c_drivers_8h" startline="11">RTCRead</references>
+        <references refid="_d_s1306___r_t_c_drivers_8h_1a102032b9f3332eb37d97b86d2b7219b4" compoundref="_d_s1306___r_t_c_drivers_8h" startline="12">RTCWrite</references>
+        <references refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" compoundref="_d_s1306___r_t_c_drivers_8c" startline="168" endline="182">write_RTC</references>
+        <referencedby refid="main_8c_1a498aa6d3c05eb0c93268cd2516dc55ca" compoundref="main_8c" startline="84" endline="97">ISR</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>DS1306_RTCDrivers.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Title<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>4/20/2021</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/><sp/><sp/><sp/><sp/><sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Tyler<sp/>Ovenden<sp/>112122685</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION:<sp/><sp/>class<sp/>containing<sp/>methods<sp/>for<sp/>working<sp/>with<sp/>RTC<sp/>in<sp/>DS1306</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>liking<sp/>writing<sp/>and<sp/>reading<sp/>both<sp/>for<sp/>just<sp/>doing<sp/>so<sp/>once<sp/>&amp;<sp/>in<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>burst<sp/>mode.<sp/>the<sp/>RTC<sp/>values<sp/>for<sp/>hours,<sp/>minutes<sp/>&amp;<sp/>seconds<sp/>are<sp/>written<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>an<sp/>array<sp/>to<sp/>be<sp/>displayed.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Warnings<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restrictions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Algorithms<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>References<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revision<sp/>History<sp/><sp/><sp/><sp/><sp/>:<sp/>Initial<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_d_s1306___r_t_c_drivers_8c_1a43bafb28b29491ec7f871319b5a3b2f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_CPU<sp/>4000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;util/delay.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/io.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_s1306___r_t_c_drivers_8h" kindref="compound">DS1306_RTCDrivers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_o_g___l_c_d_8h" kindref="compound">DOG_LCD.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" kindref="member">RTC_time_date_write</ref>[7]<sp/>=<sp/>{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">0x00,<sp/>0x00<sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//******************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>:<sp/>void<sp/>SPI_rtc_ds1306_config<sp/>(void)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Date<sp/>and<sp/>version<sp/>:<sp/>041221,<sp/>version<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>unselects<sp/>the<sp/>ds_1306<sp/>and<sp/>configures<sp/>an<sp/>AVR128DB48<sp/>operated<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>MHz<sp/>to<sp/>communicate<sp/>with<sp/>the<sp/>ds1306.<sp/>Pin<sp/>PC1<sp/>of<sp/>the<sp/>AVR128DB48<sp/>is<sp/>used<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>select<sp/>the<sp/>ds_1306.<sp/>SCLK<sp/>is<sp/>operated<sp/>a<sp/>the<sp/>maximum<sp/>possible<sp/>frequency<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>ds1306.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//******************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_d_s1306___r_t_c_drivers_8c_1a09aa76f037a0188e8b754523e0a92557" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a09aa76f037a0188e8b754523e0a92557" kindref="member">SPI_rtc_ds1306_config</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTA_DIR<sp/>=<sp/>0xD0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PORTA_PIN5CTRL<sp/>=<sp/>PORT_PULLUPEN_bm;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTC_DIR<sp/>=<sp/>0x02;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>PORTC_OUT<sp/>=<sp/>0x00;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//configures<sp/>SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0_CTRLA<sp/>=<sp/>SPI_ENABLE_bm<sp/>|<sp/>SPI_MASTER_bm;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//in<sp/>the<sp/>Salaee<sp/>diagrams<sp/>given<sp/>in<sp/>the<sp/>lecture,<sp/>I<sp/>saw<sp/>that<sp/>CPOL<sp/>would<sp/>be<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//as<sp/>the<sp/>CLK<sp/>is<sp/>0<sp/>when<sp/>idle,<sp/>to<sp/>find<sp/>CPHA<sp/>I<sp/>observed<sp/>the<sp/>same<sp/>diagrams<sp/>and<sp/>saw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>it<sp/>was<sp/>being<sp/>sampled<sp/>at<sp/>the<sp/>falling<sp/>edge<sp/>so<sp/>CPHA<sp/>=<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CPOL<sp/>=<sp/>0,<sp/>CPHA<sp/>=<sp/>1<sp/>is<sp/>mode<sp/>1<sp/>for<sp/>SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0_CTRLB<sp/>=<sp/>SPI_MODE_1_gc;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>&amp;=<sp/>0xFD;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/>:<sp/>&quot;block_write_RTC&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>void<sp/>block_write_RTC<sp/>(volatile<sp/>unsigned<sp/>char<sp/>*array_ptr,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unsigned<sp/>char<sp/>strt_addr,<sp/>unsigned<sp/>char<sp/>count)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128DB48<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>writes<sp/>a<sp/>block<sp/>of<sp/>data<sp/>from<sp/>an<sp/>array<sp/>to<sp/>the<sp/>DS1306.<sp/>strt_addr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>the<sp/>starting<sp/>address<sp/>in<sp/>the<sp/>DS1306.<sp/>count<sp/>is<sp/>the<sp/>number<sp/>of<sp/>data<sp/>bytes<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>be<sp/>transferred<sp/>and<sp/>array_ptr<sp/>is<sp/>the<sp/>address<sp/>of<sp/>the<sp/>source<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" kindref="member">block_write_RTC</ref><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*array_ptr,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>strt_addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTA_OUT<sp/>|=<sp/>0x80;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(3);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>strt_addr;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>strt_addr;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i&lt;count;i++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>*(array_ptr<sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//array_ptr++;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>&amp;=<sp/>0xFD;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/>:<sp/>&quot;block_read_RTC&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/>void<sp/>block_read_RTC<sp/>(volatile<sp/>unsigned<sp/>char<sp/>*array_ptr,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unsigned<sp/>char<sp/>strt_addr,<sp/>unsigned<sp/>char<sp/>count)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128DB48<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>reads<sp/>a<sp/>block<sp/>of<sp/>data<sp/>from<sp/>the<sp/>DS1306<sp/>and<sp/>transfers<sp/>it<sp/>to<sp/>an</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>array.<sp/>strt_addr<sp/>is<sp/>the<sp/>starting<sp/>address<sp/>in<sp/>the<sp/>DS1306.<sp/>count<sp/>is<sp/>the<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>data<sp/>bytes<sp/>to<sp/>be<sp/>transferred<sp/>and<sp/>array_ptr<sp/>is<sp/>the<sp/>address<sp/>of<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>destination<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" kindref="member">block_read_RTC</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*array_ptr,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>strt_addr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>count){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//dummy<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>|=<sp/>0x01;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(3);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>strt_addr;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i&lt;count;i++)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(array_ptr<sp/>+<sp/>i)<sp/>=<sp/>SPI0.DATA;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(.17);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>&amp;=<sp/>0xFD;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>dummy<sp/>data<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>void<sp/>write_RTC<sp/>(unsigned<sp/>char<sp/>reg_RTC,<sp/>unsigned<sp/>char<sp/>data_RTC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128DB48<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>Hardware<sp/>;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>writes<sp/>data<sp/>to<sp/>a<sp/>register<sp/>in<sp/>the<sp/>RTC.<sp/>To<sp/>accomplish<sp/>this,<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>first<sp/>write<sp/>the<sp/>register&apos;s<sp/>address<sp/>(reg_RTC)<sp/>followed<sp/>by<sp/>writing<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//<sp/>data<sp/>(data_RTC).<sp/>In<sp/>the<sp/>DS1306<sp/>data<sp/>sheet<sp/>this<sp/>operation<sp/>is<sp/>called<sp/>an<sp/>SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>single-byte<sp/>write.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_RTC){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>|=<sp/>0x01;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(3);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>reg_RTC;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>data_RTC;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(.17);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>&amp;=<sp/>0xFD;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//<sp/>unsigned<sp/>char<sp/>read_RTC<sp/>(unsigned<sp/>char<sp/>reg_RTC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128DB48<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>Tyler<sp/>Ovenden</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>reads<sp/>data<sp/>from<sp/>a<sp/>register<sp/>in<sp/>the<sp/>RTC.<sp/>To<sp/>accomplish<sp/>this,<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>must<sp/>first<sp/>write<sp/>the<sp/>register&apos;s<sp/>address<sp/>(reg_RTC)<sp/>followed<sp/>by<sp/>writing<sp/>a<sp/>dummy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>byte<sp/>to<sp/>generate<sp/>the<sp/>SCLKs<sp/>to<sp/>read<sp/>the<sp/>data<sp/>(data_RTC).<sp/>In<sp/>the<sp/>DS1306<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sheet<sp/>this<sp/>operation<sp/>is<sp/>called<sp/>am<sp/>SPI<sp/>single-byte<sp/>read.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a60a3d2d74834a30436281bd530a04553" kindref="member">read_RTC</ref><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reg_RTC)<sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>dummy<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>|=<sp/>0x01;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(3);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//writes<sp/>the<sp/>read<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>reg_RTC;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>dummy<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SPI0_INTFLAGS<sp/>!=<sp/><sp/>SPI_IF_bm){}<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>Tx<sp/>ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" kindref="member">temp</ref><sp/>=<sp/>SPI0.DATA;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>_delay_us(.17);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC_OUT<sp/>&amp;=<sp/>0xFD;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//write<sp/>dummy<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI0.DATA<sp/>=<sp/>0x01;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1a0849a05a0191a174215a9f9832d6ce91" kindref="member">temp</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//***************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>Name<sp/>:<sp/>void<sp/>write_read_RTC_test(void)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Target<sp/>MCU<sp/>:<sp/>AVR128DB48<sp/>@<sp/>4MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/>:<sp/>Ken<sp/>Short</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DESCRIPTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>writes<sp/>a<sp/>byte<sp/>to<sp/>the<sp/>NV<sp/>RAM<sp/>and<sp/>then<sp/>it<sp/>reads<sp/>back<sp/>the<sp/>location</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//<sp/>just<sp/>written<sp/>and<sp/>places<sp/>the<sp/>result<sp/>in<sp/>a<sp/>global<sp/>array<sp/>named<sp/>RTC_byte[].<sp/>The</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//<sp/>function<sp/>repeats<sp/>this<sp/>write/read<sp/>sequence<sp/>10<sp/>times.<sp/>The<sp/>locations<sp/>written<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>0xA0<sp/>through<sp/>0xA9<sp/>and<sp/>the<sp/>corresponding<sp/>locations<sp/>read<sp/>are<sp/>0x20<sp/>through<sp/>0x29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//**************************************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1ae4e012a5b246a8944e4e4336c72a7e7d" kindref="member">write_read_RTC_test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a12ebcc19faf4ec1539ab9210ef56c04d" kindref="member">write_RTC</ref>(<ref refid="_d_s1306___r_t_c_drivers_8h_1a5a4a54453c9ef3337620a36939380cd3" kindref="member">CTRL_REG</ref>,<sp/>0x00);<sp/><sp/></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//RTC_time_date_write()<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1ab9b8e0a9e745786f1e8e58b887d29488" kindref="member">block_write_RTC</ref><sp/>(<ref refid="_d_s1306___r_t_c_drivers_8c_1ac91a984343034525fd2e2d652df23d66" kindref="member">RTC_time_date_write</ref>,<sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a102032b9f3332eb37d97b86d2b7219b4" kindref="member">RTCWrite</ref>,<sp/>7);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8c_1a9da8fa7304180559381b120c1e21d47c" kindref="member">block_read_RTC</ref><sp/>(<ref refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" kindref="member">RTC_time_date_read</ref>,<sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a0f3652205599fd81f361aeb79dda0cde" kindref="member">RTCRead</ref>,<sp/>7);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(<ref refid="_d_o_g___l_c_d_8h_1afc86fba50fc563b62b890a949ef7fcce" kindref="member">dsp_buff1</ref>,<sp/></highlight><highlight class="stringliteral">&quot;time:<sp/>%d:%d:%d&quot;</highlight><highlight class="normal">,<sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" kindref="member">RTC_time_date_read</ref>[2],</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" kindref="member">RTC_time_date_read</ref>[1],<ref refid="_d_s1306___r_t_c_drivers_8h_1a581f3fa2f63c3f5937877a632ef4302c" kindref="member">RTC_time_date_read</ref>[0]);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/vleen/Documents/Atmel Studio/7.0/display_time_temp/display_time_temp/DS1306_RTCDrivers.c"/>
+  </compounddef>
+</doxygen>
